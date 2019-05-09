@@ -20,12 +20,12 @@ fi
 
 # ASDF - Erlang and Elixir Version Manager
 
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+. $(brew --prefix asdf)/asdf.sh
+. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
 
 # ===================================================================================
 
-# Open Projects Folder 
+# Open Projects Folder
 
 cd ~/Projects
 
