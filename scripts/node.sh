@@ -5,7 +5,12 @@ if [ ! -z "$NODE_VERSION" ] then
   nvm install $NODE_VERSION
   nvm alias default $NODE_VERSION
 
-  # Install Create-React-App
-  node install -g create-react-app
+  # Install node dependencies
+  node install -g create-react-app \
+    expo-cli \
+    now \
+    npm \
+    npm-check-updates \
+    react-native-cli
 
 fi

@@ -9,7 +9,8 @@ brew install git \
   nvm \
   pyenv \
   the_silver_searcher \
-  watch
+  watch \
+  watchman
 
 # Install Packages ignore dependencies
 brew install yarn --ignore-dependencies
