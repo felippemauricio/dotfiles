@@ -9,7 +9,7 @@
 - [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Vim](https://github.com/felippemauricio/vimrc)
 
-![](https://raw.githubusercontent.com/felippemauricio/homebrew/master/docs/images/dotfiles.png)
+![](https://raw.githubusercontent.com/felippemauricio/dotfiles/master/docs/images/dotfiles.png)
 
 ## What do you need?
 
