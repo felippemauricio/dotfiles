@@ -9,11 +9,7 @@ brew install git \
   nvm \
   pyenv \
   the_silver_searcher \
-  watch \
-  yarn
+  watch
 
-# Instal now
-brew cask install now
-
-# Remove unnecessary dependencies - Install by nvm and pyenv after
-brew uninstall node --ignore-dependencies
+# Install Packages ignore dependencies
+brew install yarn --ignore-dependencies

@@ -1,0 +1,3 @@
+[submodule "lib/vimrc"]
+path = lib/vimrc
+url = git@github.com:felippemauricio/vimrc.git
