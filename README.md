@@ -9,7 +9,7 @@
 - [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Vim](https://github.com/felippemauricio/vimrc)
 
-![](https://raw.githubusercontent.com/felippemauricio/dotfiles/master/docs/images/dotfiles.png)
+![](https://raw.githubusercontent.com/felippemauricio/dotfiles/master/docs/images/dotfiles.png?token=ABGSCLLGMXT3TODIYNK3ZYK44CVIG)
 
 ## What do you need?
 
@@ -21,6 +21,29 @@
 git submodule init
 git submodule update
 ./configure.sh
+```
+
+## How to configure languages?
+
+You can configure same languages, with this project.
+
+### Elixir
+```sh
+ERLANG_VERSION=<number> 
+ELIXIR_VERSION=<number>
+./scripts/elixir.sh
+```
+
+### Node
+```sh
+NODE_VERSION=<number> 
+./scripts/node.sh
+```
+
+### Python
+```sh
+PYTHON_VERSION=<number> 
+./scripts/python.sh
 ```
 
 ## Packages details
@@ -37,3 +60,16 @@ git submodule update
 - [watch](http://osxdaily.com/2010/08/22/install-watch-command-on-os-x/)
 - [watchman](https://facebook.github.io/watchman)
 - [yarn](https://yarnpkg.com/en/)
+
+### Node Packages at this project
+
+- [create-react-app](https://www.npmjs.com/package/create-react-app)
+- [expo-cli](https://www.npmjs.com/package/expo-cli)
+- [now](https://www.npmjs.com/package/now)
+- [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
+- [react-native-cli](https://www.npmjs.com/package/react-native-cli)
+
+### Python Packages at this project
+
+- [awscli](https://pypi.org/project/awscli)
+- [awsebcli](https://pypi.org/project/awsebcli)
