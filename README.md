@@ -1,5 +1,6 @@
 # .files
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/felippemauricio/dotfiles/blob/master/LICENSE.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/felippemauricio/dotfiles/pulls)
 [![Platform](https://img.shields.io/badge/platform-macos-lightgrey.svg)](https://www.apple.com/lae/macos/mojave/)
 
@@ -73,3 +74,7 @@ PYTHON_VERSION=<number>
 
 - [awscli](https://pypi.org/project/awscli)
 - [awsebcli](https://pypi.org/project/awsebcli)
+
+## License
+
+Licensed under the MIT License, Copyright © 2019-present Felippe Maurício.
