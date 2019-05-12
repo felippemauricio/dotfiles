@@ -10,7 +10,7 @@
 - [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Vim](https://github.com/felippemauricio/vimrc)
 
-![](https://raw.githubusercontent.com/felippemauricio/dotfiles/master/docs/images/dotfiles.png?token=ABGSCLLGMXT3TODIYNK3ZYK44CVIG)
+<img src="https://raw.githubusercontent.com/felippemauricio/dotfiles/master/docs/images/dotfiles.png?token=ABGSCLLGMXT3TODIYNK3ZYK44CVIG" width="600" />
 
 ## What do you need?
 
