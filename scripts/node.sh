@@ -12,10 +12,7 @@ if [ ! -z "$NODE_VERSION" ]; then
 
   # Install node dependencies
   npm install -g create-react-app \
-    expo-cli \
-    now \
     npm \
-    npm-check-updates \
-    react-native-cli
+    npm-check-updates
 
 fi

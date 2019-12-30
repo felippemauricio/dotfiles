@@ -9,8 +9,19 @@ brew install git \
   nvm \
   pyenv \
   the_silver_searcher \
-  watch \
-  watchman
+  watch
 
 # Install Packages ignore dependencies
 brew install yarn --ignore-dependencies
+
+# Install Programs
+brew cask install docker \
+  google-backup-and-sync \
+  google-chrome \
+  iterm2 \
+  postman \
+  skype \
+  slack \
+  spotify \
+  visual-studio-code \
+  whatsapp

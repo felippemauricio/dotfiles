@@ -1,4 +1,4 @@
-# .files
+# .dotfiles
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/felippemauricio/dotfiles/blob/master/LICENSE.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/felippemauricio/dotfiles/pulls)
@@ -12,16 +12,18 @@
 
 <img src="https://raw.githubusercontent.com/felippemauricio/dotfiles/master/docs/images/dotfiles.png?token=ABGSCLLGMXT3TODIYNK3ZYK44CVIG" width="600" />
 
-## What do you need?
-
-- git
-
 ## How to configure?
 
+```sh
+./configure.sh
 ```
+
+## How to configure vimrc?
+
+```sh
 git submodule init
 git submodule update
-./configure.sh
+./lib/vimrc/install.sh
 ```
 
 ## How to configure languages?
@@ -59,21 +61,30 @@ PYTHON_VERSION=<number>
 - [pyenv](https://github.com/pyenv/pyenv)
 - [silver searcher](https://github.com/ggreer/the_silver_searcher)
 - [watch](http://osxdaily.com/2010/08/22/install-watch-command-on-os-x/)
-- [watchman](https://facebook.github.io/watchman)
 - [yarn](https://yarnpkg.com/en/)
 
 ### Node Packages at this project
 
 - [create-react-app](https://www.npmjs.com/package/create-react-app)
-- [expo-cli](https://www.npmjs.com/package/expo-cli)
-- [now](https://www.npmjs.com/package/now)
 - [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
-- [react-native-cli](https://www.npmjs.com/package/react-native-cli)
 
 ### Python Packages at this project
 
 - [awscli](https://pypi.org/project/awscli)
 - [awsebcli](https://pypi.org/project/awsebcli)
+
+## Programs details
+
+- [docker](https://www.docker.com/)
+- [google-backup-and-sync](https://www.google.com/drive/)
+- [google-chrome](https://www.google.com/chrome/)
+- [iterm2](https://iterm2.com/)
+- [postman](https://www.getpostman.com/)
+- [skype](https://www.skype.com/en/)
+- [slack](https://slack.com/intl/pt-br/)
+- [spotify](https://www.spotify.com/br/)
+- [visual-studio-code](https://code.visualstudio.com/)
+- [whatsapp](https://www.whatsapp.com/)
 
 ## License
 
