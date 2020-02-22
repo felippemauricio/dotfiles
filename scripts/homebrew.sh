@@ -15,12 +15,13 @@ brew install git \
 brew install yarn --ignore-dependencies
 
 # Install Programs
-brew cask install docker \
-  google-backup-and-sync \
+brew cask install clipy \
+  docker \
+  dropbox \
   google-chrome \
   iterm2 \
   postman \
-  skype \
+  rectangle \
   slack \
   spotify \
   visual-studio-code \
