@@ -15,14 +15,19 @@ brew install git \
 brew install yarn --ignore-dependencies
 
 # Install Programs
-brew cask install clipy \
+brew cask install 1password \
+  clipy \
+  discord \
   docker \
   dropbox \
+  gitkraken \
   google-chrome \
   iterm2 \
+  microsoft-office \
   postman \
   rectangle \
   slack \
   spotify \
   visual-studio-code \
-  whatsapp
+  whatsapp \
+  zoomus
