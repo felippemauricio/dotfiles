@@ -16,6 +16,7 @@ brew install yarn --ignore-dependencies
 
 # Install Programs
 brew cask install 1password \
+  autoconf \
   clipy \
   discord \
   docker \
@@ -30,4 +31,5 @@ brew cask install 1password \
   spotify \
   visual-studio-code \
   whatsapp \
+  wxmac \
   zoomus
