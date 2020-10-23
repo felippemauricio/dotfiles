@@ -12,11 +12,10 @@ brew install git \
   watch
 
 # Install Packages ignore dependencies
-brew install yarn --ignore-dependencies
+brew install yarn
 
 # Install Programs
 brew cask install 1password \
-  autoconf \
   clipy \
   discord \
   docker \
@@ -31,5 +30,4 @@ brew cask install 1password \
   spotify \
   visual-studio-code \
   whatsapp \
-  wxmac \
   zoomus
