@@ -1,0 +1,36 @@
+# CLAUDE.md
+
+Guidance for AI agents working in this repository.
+
+## What this is
+
+A personal macOS dotfiles repository. Running `./install.sh` provisions a fresh
+machine: Homebrew and its packages, Oh My Zsh, the zsh configuration, and the
+Node and Python toolchains. It targets **macOS on Apple Silicon**, so Homebrew
+lives at `/opt/homebrew` and shell paths must use that prefix (never
+`/usr/local`).
+
+## Structure
+
+```
+dotfiles/
+├── Brewfile           # declarative list of Homebrew formulae and casks
+├── install.sh         # entry point; runs the scripts below in order
+└── scripts/
+    ├── homebrew.sh    # installs Homebrew, then `brew bundle`
+    ├── oh-my-zsh.sh   # installs the Xcode CLI tools and Oh My Zsh
+    ├── shell.sh       # installs the zsh config and sources it from ~/.zshrc
+    ├── zshrc          # the zsh config (nvm + pyenv); copied to ~/.dotfiles.zsh
+    └── languages.sh   # installs Node (nvm) and Python (pyenv)
+```
+
+## Conventions
+
+- **Add or remove packages by editing the `Brewfile`**, never by editing the
+  scripts. Formulae use `brew "name"`; applications use `cask "name"`.
+- **Version managers:** Node is managed with nvm and Python with pyenv. Do not
+  introduce asdf or mise.
+- Every script must stay runnable on its own and is `set -euo pipefail`.
+- The shell config is installed as `~/.dotfiles.zsh` and sourced from `~/.zshrc`.
+- All generated content (docs, comments, commit messages) is written in
+  Australian English.

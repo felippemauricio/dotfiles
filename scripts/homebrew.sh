@@ -1,33 +1,13 @@
-# Install Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#!/usr/bin/env bash
+set -euo pipefail
 
-# Install Packages
-brew install git \
-  asdf \
-  heroku/brew/heroku \
-  jsonpp \
-  nvm \
-  pyenv \
-  the_silver_searcher \
-  watch
+# Install Homebrew if it is not already present
+if ! command -v brew >/dev/null 2>&1; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
-# Install Packages ignore dependencies
-brew install yarn
+# Make brew available in the current shell (Apple Silicon)
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Install Programs
-brew cask install 1password \
-  clipy \
-  discord \
-  docker \
-  dropbox \
-  gitkraken \
-  google-chrome \
-  iterm2 \
-  microsoft-office \
-  postman \
-  rectangle \
-  slack \
-  spotify \
-  visual-studio-code \
-  whatsapp \
-  zoomus
+# Install everything listed in the Brewfile
+brew bundle --file="$(dirname "$0")/../Brewfile"

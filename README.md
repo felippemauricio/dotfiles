@@ -1,91 +1,69 @@
 # .dotfiles
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/felippemauricio/dotfiles/blob/master/LICENSE.md)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/felippemauricio/dotfiles/pulls)
-[![Platform](https://img.shields.io/badge/platform-macos-lightgrey.svg)](https://www.apple.com/lae/macos/mojave/)
+[![GitHub licence](https://img.shields.io/badge/licence-MIT-blue.svg)](https://github.com/felippemauricio/dotfiles/blob/master/LICENSE.md)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/felippemauricio/dotfiles/pulls)
+[![Platform](https://img.shields.io/badge/platform-macOS-lightgrey.svg)](https://www.apple.com/macos/)
 
-.files — Sensible hacker defaults for macOS. This configures:
+Sensible developer defaults for macOS. One command sets up Homebrew, Oh My Zsh,
+the shell configuration, and the Node and Python toolchains.
 
-- [Homebrew](https://github.com/Homebrew/brew)
-- [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
-- [Vim](https://github.com/felippemauricio/vimrc)
+📖 **Documentation:** https://felippemauricio.github.io/dotfiles/
 
-<img src="https://raw.githubusercontent.com/felippemauricio/dotfiles/master/docs/images/dotfiles.png?token=ABGSCLLGMXT3TODIYNK3ZYK44CVIG" width="600" />
+<img src="https://raw.githubusercontent.com/felippemauricio/dotfiles/master/docs/images/dotfiles.png" width="600" />
 
-## How to configure?
+## Prerequisites
 
-```sh
-./configure.sh
-```
+- macOS on Apple Silicon (Homebrew is expected at `/opt/homebrew`)
+- The Xcode command-line tools (the installer triggers their installation)
 
-## How to configure vimrc?
+## Install
 
 ```sh
-git submodule init
-git submodule update
-./lib/vimrc/install.sh
+git clone git@github.com:felippemauricio/dotfiles.git
+cd dotfiles
+./install.sh
 ```
 
-## How to configure languages?
+Then restart your terminal.
 
-You can configure same languages, with this project.
+## What the installer does
 
-### Elixir
-```sh
-ERLANG_VERSION=<number> 
-ELIXIR_VERSION=<number>
-./scripts/elixir.sh
-```
+`install.sh` runs each step below in order. Every script is also runnable on its
+own.
 
-### Node
-```sh
-NODE_VERSION=<number> 
-./scripts/node.sh
-```
+| Step | Script                 | What it does                                                   |
+| ---- | ---------------------- | -------------------------------------------------------------- |
+| 1    | `scripts/homebrew.sh`  | Installs Homebrew, then installs everything in the `Brewfile`. |
+| 2    | `scripts/oh-my-zsh.sh` | Installs the Xcode command-line tools and Oh My Zsh.           |
+| 3    | `scripts/shell.sh`     | Installs the zsh configuration and sources it from `~/.zshrc`. |
+| 4    | `scripts/languages.sh` | Installs Node (nvm LTS) and Python (latest stable via pyenv).  |
 
-### Python
-```sh
-PYTHON_VERSION=<number> 
-./scripts/python.sh
-```
+## What gets installed
 
-## Packages details
+Packages live in the `Brewfile`. To add or remove something, edit that file and
+re-run `brew bundle`.
 
-### Homebrew Packages at this project
+### Command-line tools
 
-- [asdf](https://github.com/asdf-vm/asdf)
 - [git](https://git-scm.com/)
-- [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli)
-- [jsonpp](https://jmhodges.github.io/jsonpp/)
-- [nvm](https://github.com/creationix/nvm)
-- [pyenv](https://github.com/pyenv/pyenv)
-- [silver searcher](https://github.com/ggreer/the_silver_searcher)
-- [watch](http://osxdaily.com/2010/08/22/install-watch-command-on-os-x/)
-- [yarn](https://yarnpkg.com/en/)
+- [nvm](https://github.com/nvm-sh/nvm) — Node version manager
+- [pyenv](https://github.com/pyenv/pyenv) — Python version manager
+- [jq](https://jqlang.github.io/jq/) — JSON processor
+- [ripgrep](https://github.com/BurntSushi/ripgrep) — fast recursive search
+- [watch](https://formulae.brew.sh/formula/watch) — run a command periodically
 
-### Node Packages at this project
+### Applications
 
-- [create-react-app](https://www.npmjs.com/package/create-react-app)
-- [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
+1Password, ChatGPT Atlas, Claude, Clipy, Cursor, Docker Desktop, Dropbox,
+Google Chrome, iTerm2, Microsoft Teams, Postman, Rectangle, Slack, Spotify,
+Visual Studio Code, WhatsApp, Zed and Zoom.
 
-### Python Packages at this project
+## Version managers
 
-- [awscli](https://pypi.org/project/awscli)
-- [awsebcli](https://pypi.org/project/awsebcli)
+Node is managed with **nvm** and Python with **pyenv**. The shell configuration
+loads both, and automatically switches to the Node version in a project's
+`.nvmrc` when you enter its directory.
 
-## Programs details
+## Licence
 
-- [docker](https://www.docker.com/)
-- [google-backup-and-sync](https://www.google.com/drive/)
-- [google-chrome](https://www.google.com/chrome/)
-- [iterm2](https://iterm2.com/)
-- [postman](https://www.getpostman.com/)
-- [skype](https://www.skype.com/en/)
-- [slack](https://slack.com/intl/pt-br/)
-- [spotify](https://www.spotify.com/br/)
-- [visual-studio-code](https://code.visualstudio.com/)
-- [whatsapp](https://www.whatsapp.com/)
-
-## License
-
-Licensed under the MIT License, Copyright © 2019-present Felippe Maurício.
+Licensed under the MIT Licence, Copyright © 2019-present Felippe Maurício.
