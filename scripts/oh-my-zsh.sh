@@ -1,5 +1,11 @@
-# Install XCode Command Tools
-xcode-select --install
+#!/usr/bin/env bash
+set -euo pipefail
 
-# Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sed -e 's/env zsh -l//g')"
+# Install the Xcode command-line tools (skips if already installed)
+xcode-select --install 2>/dev/null || true
+
+# Install Oh My Zsh unattended (do not change the shell or launch zsh)
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+  RUNZSH=no CHSH=no \
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi

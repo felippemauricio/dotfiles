@@ -1,0 +1,35 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "description": "Documentation site for the dotfiles repository",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev website",
+    "docs:build": "vitepress build website",
+    "docs:preview": "vitepress preview website",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felippemauricio/dotfiles.git"
+  },
+  "author": {
+    "name": "Felippe Maurício",
+    "email": "felippemauriciov@gmail.com",
+    "url": "https://github.com/felippemauricio"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "eslint": "^9.18.0",
+    "prettier": "^3.8.4",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.61.1",
+    "vitepress": "^1.6.4",
+    "vitest": "^2.1.8"
+  }
+}
