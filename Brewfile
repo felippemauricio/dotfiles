@@ -4,20 +4,27 @@
 
 # Command-line tools
 brew "git"
-brew "nvm"     # Node version manager
-brew "pyenv"   # Python version manager
-brew "jq"      # JSON processor
-brew "ripgrep" # fast recursive search
-brew "watch"   # run a command periodically
+brew "gh"        # GitHub CLI
+brew "nvm"       # Node version manager
+brew "pyenv"     # Python version manager
+brew "awscli"    # AWS command-line interface
+brew "azure-cli" # Azure command-line interface
+brew "jq"        # JSON processor
+brew "ripgrep"   # fast recursive search
+brew "watch"     # run a command periodically
 
 # Applications (casks)
 cask "1password"
 cask "chatgpt-atlas"
 cask "claude"
+cask "claude-code"
 cask "clipy"
+cask "codex"
+cask "codex-app"
 cask "cursor"
 cask "docker-desktop"
 cask "dropbox"
+cask "firefox"
 cask "google-chrome"
 cask "iterm2"
 cask "microsoft-teams"

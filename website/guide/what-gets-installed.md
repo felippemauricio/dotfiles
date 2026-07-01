@@ -7,17 +7,20 @@ re-run `brew bundle`.
 ## Command-line tools
 
 - [git](https://git-scm.com/)
+- [gh](https://cli.github.com/) — GitHub CLI
 - [nvm](https://github.com/nvm-sh/nvm) — Node version manager
 - [pyenv](https://github.com/pyenv/pyenv) — Python version manager
+- [awscli](https://aws.amazon.com/cli/) — AWS command-line interface
+- [azure-cli](https://learn.microsoft.com/cli/azure/) — Azure command-line interface
 - [jq](https://jqlang.github.io/jq/) — JSON processor
 - [ripgrep](https://github.com/BurntSushi/ripgrep) — fast recursive search
 - [watch](https://formulae.brew.sh/formula/watch) — run a command periodically
 
 ## Applications
 
-1Password, ChatGPT Atlas, Claude, Clipy, Cursor, Docker Desktop, Dropbox,
-Google Chrome, iTerm2, Microsoft Teams, Postman, Rectangle, Slack, Spotify,
-Visual Studio Code, WhatsApp, Zed and Zoom.
+1Password, ChatGPT Atlas, Claude, Claude Code, Clipy, Codex, Codex app, Cursor,
+Docker Desktop, Dropbox, Firefox, Google Chrome, iTerm2, Microsoft Teams,
+Postman, Rectangle, Slack, Spotify, Visual Studio Code, WhatsApp, Zed and Zoom.
 
 ## Languages
 
