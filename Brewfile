@@ -3,6 +3,7 @@
 # Add or remove packages here; never edit the install scripts for this.
 
 # Command-line tools
+brew "apfel"   # Apple Intelligence CLI + OpenAI-compatible API server
 brew "git"
 brew "nvm"     # Node version manager
 brew "pyenv"   # Python version manager
