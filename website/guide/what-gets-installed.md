@@ -28,6 +28,7 @@ Installed as Homebrew **formulae**.
 - <img src="https://www.google.com/s2/favicons?domain=jqlang.github.io&sz=64" width="18" align="top" /> **[jq](https://jqlang.github.io/jq/)** — command-line JSON processor for slicing, filtering and transforming JSON.
 - <img src="https://www.google.com/s2/favicons?domain=github.com&sz=64" width="18" align="top" /> **[ripgrep](https://github.com/BurntSushi/ripgrep)** — extremely fast recursive search (`rg`) that respects `.gitignore`.
 - <img src="https://www.google.com/s2/favicons?domain=formulae.brew.sh&sz=64" width="18" align="top" /> **[watch](https://formulae.brew.sh/formula/watch)** — re-runs a command on a fixed interval and shows its latest output.
+- <img src="https://www.google.com/s2/favicons?domain=github.com&sz=64" width="18" align="top" /> **[tmux](https://github.com/tmux/tmux)** — terminal multiplexer: splits the terminal into panes and keeps sessions alive; used for the Claude Code teammate-pane workflow.
 
 ## 🐚 Shell — Oh My Zsh
 
