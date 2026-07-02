@@ -13,6 +13,7 @@ brew "azure-cli" # Azure command-line interface
 brew "jq"        # JSON processor
 brew "ripgrep"   # fast recursive search
 brew "watch"     # run a command periodically
+brew "tmux"      # terminal multiplexer (Claude Code teammate panes)
 
 # Applications (casks)
 cask "1password"
