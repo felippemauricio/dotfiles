@@ -18,7 +18,7 @@
     "url": "git+https://github.com/felippemauricio/dotfiles.git"
   },
   "author": {
-    "name": "Felippe Maurício",
+    "name": "Felippe Maur\u00edcio",
     "email": "felippemauriciov@gmail.com",
     "url": "https://github.com/felippemauricio"
   },
@@ -29,12 +29,7 @@
     "prettier": "^3.9.4",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.62.1",
-    "vitepress": "^1.6.4",
+    "vitepress": "^2.0.0-alpha.17",
     "vitest": "^4.1.9"
-  },
-  "overrides": {
-    "vitepress": {
-      "vite": "^7.3.1"
-    }
   }
 }
