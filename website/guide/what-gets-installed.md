@@ -12,29 +12,34 @@ first) is declared in the [`Brewfile`](/reference/brewfile) and applied with
 
 ## 🍺 Homebrew
 
-- <img src="https://www.google.com/s2/favicons?domain=brew.sh&sz=64" width="18" align="top" /> **[Homebrew](https://brew.sh/)** — the macOS package manager that installs everything on this page. Formulae (`brew`) are command-line tools; casks (`cask`) are GUI applications.
+- **[Homebrew](https://brew.sh/)** <img src="/images/tools/homebrew.png" width="18" align="top" /> — the macOS package manager that installs everything on this page. Formulae (`brew`) are command-line tools; casks (`cask`) are GUI applications.
 
 ## ⌨️ Command-line tools
 
 Installed as Homebrew **formulae**.
 
-- <img src="https://www.google.com/s2/favicons?domain=apfel.franzai.com&sz=64" width="18" align="top" /> **[apfel](https://apfel.franzai.com)** — Apple Intelligence from the command line, with an OpenAI-compatible API server.
-- <img src="https://www.google.com/s2/favicons?domain=git-scm.com&sz=64" width="18" align="top" /> **[git](https://git-scm.com/)** — distributed version control.
-- <img src="https://www.google.com/s2/favicons?domain=github.com&sz=64" width="18" align="top" /> **[gh](https://cli.github.com/)** — GitHub from the terminal: pull requests, issues and repositories.
-- <img src="https://www.google.com/s2/favicons?domain=nodejs.org&sz=64" width="18" align="top" /> **[nvm](https://github.com/nvm-sh/nvm)** — Node Version Manager; install and switch between Node.js versions.
-- <img src="https://www.google.com/s2/favicons?domain=python.org&sz=64" width="18" align="top" /> **[pyenv](https://github.com/pyenv/pyenv)** — Python version manager; install and switch between Python versions.
-- <img src="https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=64" width="18" align="top" /> **[awscli](https://aws.amazon.com/cli/)** — Amazon Web Services command-line interface.
-- <img src="https://www.google.com/s2/favicons?domain=azure.microsoft.com&sz=64" width="18" align="top" /> **[azure-cli](https://learn.microsoft.com/cli/azure/)** — Microsoft Azure command-line interface.
-- <img src="https://www.google.com/s2/favicons?domain=terraform.io&sz=64" width="18" align="top" /> **[terraform](https://developer.hashicorp.com/terraform)** — infrastructure as code; provisions and manages cloud resources declaratively. Installed from the official `hashicorp/tap`.
-- <img src="https://www.google.com/s2/favicons?domain=jqlang.github.io&sz=64" width="18" align="top" /> **[jq](https://jqlang.github.io/jq/)** — command-line JSON processor for slicing, filtering and transforming JSON.
-- <img src="https://www.google.com/s2/favicons?domain=github.com&sz=64" width="18" align="top" /> **[ripgrep](https://github.com/BurntSushi/ripgrep)** — extremely fast recursive search (`rg`) that respects `.gitignore`.
-- <img src="https://www.google.com/s2/favicons?domain=formulae.brew.sh&sz=64" width="18" align="top" /> **[watch](https://formulae.brew.sh/formula/watch)** — re-runs a command on a fixed interval and shows its latest output.
-- <img src="https://www.google.com/s2/favicons?domain=github.com&sz=64" width="18" align="top" /> **[tmux](https://github.com/tmux/tmux)** — terminal multiplexer: splits the terminal into panes and keeps sessions alive; used for the Claude Code teammate-pane workflow.
+- **[awscli](https://aws.amazon.com/cli/)** <img src="/images/tools/aws.png" width="18" align="top" /> — Amazon Web Services command-line interface.
+- **[azure-cli](https://learn.microsoft.com/cli/azure/)** <img src="/images/tools/azure.png" width="18" align="top" /> — Microsoft Azure command-line interface.
+- **[gh](https://cli.github.com/)** <img src="/images/tools/github.png" width="18" align="top" /> — GitHub from the terminal: pull requests, issues and repositories.
+- **[git](https://git-scm.com/)** <img src="/images/tools/git.png" width="18" align="top" /> — distributed version control.
+- **[jq](https://jqlang.org/)** <img src="/images/tools/jq.png" width="18" align="top" /> — command-line JSON processor for slicing, filtering and transforming JSON.
+- **[nvm](https://github.com/nvm-sh/nvm)** <img src="/images/tools/nodejs.png" width="18" align="top" /> — Node Version Manager; install and switch between Node.js versions.
+- **[pyenv](https://github.com/pyenv/pyenv)** <img src="/images/tools/python.png" width="18" align="top" /> — Python version manager; install and switch between Python versions.
+- **[ripgrep](https://github.com/BurntSushi/ripgrep)** <img src="/images/tools/github.png" width="18" align="top" /> — extremely fast recursive search (`rg`) that respects `.gitignore`.
+- **[terraform](https://developer.hashicorp.com/terraform)** <img src="/images/tools/terraform.png" width="18" align="top" /> — infrastructure as code; provisions and manages cloud resources declaratively. Installed from the official `hashicorp/tap`.
+- **[tmux](https://github.com/tmux/tmux)** <img src="/images/tools/github.png" width="18" align="top" /> — terminal multiplexer: splits the terminal into panes and keeps sessions alive; used for the Claude Code teammate-pane workflow.
+- **[watch](https://formulae.brew.sh/formula/watch)** <img src="/images/tools/homebrew-formulae.png" width="18" align="top" /> — re-runs a command on a fixed interval and shows its latest output.
+
+## 🧠 AI & machine learning
+
+Installed as a Homebrew **formula**.
+
+- **[apfel](https://apfel.franzai.com)** 🍏 — Apple Intelligence from the command line, with an OpenAI-compatible API server.
 
 ## 🐚 Shell — Oh My Zsh
 
-- <img src="https://www.google.com/s2/favicons?domain=ohmyz.sh&sz=64" width="18" align="top" /> **[Oh My Zsh](https://ohmyz.sh/)** — community framework for managing your zsh configuration (themes, plugins, sensible defaults).
-- <img src="https://www.google.com/s2/favicons?domain=zsh.org&sz=64" width="18" align="top" /> **The dotfiles zsh config** (`~/.dotfiles.zsh`) — loads Homebrew, initialises **nvm** (with automatic `.nvmrc` switching) and **pyenv**, and opens your `~/Workspace` on every new shell. See [The install scripts](/guide/scripts).
+- **[Oh My Zsh](https://ohmyz.sh/)** <img src="/images/tools/oh-my-zsh.png" width="18" align="top" /> — community framework for managing your zsh configuration (themes, plugins, sensible defaults).
+- **The dotfiles zsh config** (`~/.dotfiles.zsh`) <img src="/images/tools/zsh.png" width="18" align="top" /> — loads Homebrew, initialises **nvm** (with automatic `.nvmrc` switching) and **pyenv**, and opens your `~/Workspace` on every new shell. See [The install scripts](/guide/scripts).
 
 ## 🖥️ Applications
 
@@ -42,56 +47,56 @@ Installed as Homebrew **casks**.
 
 ### 🧑‍💻 Code editors & terminals
 
-- <img src="https://www.google.com/s2/favicons?domain=cursor.com&sz=64" width="18" align="top" /> **[Cursor](https://cursor.com/)** — AI-first code editor (a Visual Studio Code fork).
-- <img src="https://www.google.com/s2/favicons?domain=code.visualstudio.com&sz=64" width="18" align="top" /> **[Visual Studio Code](https://code.visualstudio.com/)** — extensible code editor.
-- <img src="https://www.google.com/s2/favicons?domain=zed.dev&sz=64" width="18" align="top" /> **[Zed](https://zed.dev/)** — high-performance, collaborative code editor.
-- <img src="https://www.google.com/s2/favicons?domain=iterm2.com&sz=64" width="18" align="top" /> **[iTerm2](https://iterm2.com/)** — feature-rich terminal emulator for macOS.
+- **[Cursor](https://cursor.com/)** <img src="/images/tools/cursor.png" width="18" align="top" /> — AI-first code editor (a Visual Studio Code fork).
+- **[iTerm2](https://iterm2.com/)** <img src="/images/tools/iterm2.png" width="18" align="top" /> — feature-rich terminal emulator for macOS.
+- **[Visual Studio Code](https://code.visualstudio.com/)** <img src="/images/tools/vscode.png" width="18" align="top" /> — extensible code editor.
+- **[Zed](https://zed.dev/)** <img src="/images/tools/zed.png" width="18" align="top" /> — high-performance, collaborative code editor.
 
 ### 🤖 AI assistants & coding agents
 
-- <img src="https://www.google.com/s2/favicons?domain=claude.ai&sz=64" width="18" align="top" /> **[Claude](https://claude.ai/)** — Anthropic's Claude desktop app.
-- <img src="https://www.google.com/s2/favicons?domain=claude.com&sz=64" width="18" align="top" /> **[Claude Code](https://claude.com/product/claude-code)** — Anthropic's agentic coding tool for the terminal.
-- <img src="https://www.google.com/s2/favicons?domain=openai.com&sz=64" width="18" align="top" /> **[ChatGPT Atlas](https://openai.com/)** — OpenAI's ChatGPT desktop browser.
-- <img src="https://www.google.com/s2/favicons?domain=openai.com&sz=64" width="18" align="top" /> **[Codex](https://github.com/openai/codex)** — OpenAI's command-line coding agent.
-- <img src="https://www.google.com/s2/favicons?domain=openai.com&sz=64" width="18" align="top" /> **[Codex app](https://openai.com/codex)** — OpenAI's Codex desktop app.
+- **[ChatGPT Atlas](https://openai.com/)** <img src="/images/tools/openai.png" width="18" align="top" /> — OpenAI's ChatGPT desktop browser.
+- **[Claude](https://claude.ai/)** <img src="/images/tools/claude-ai.png" width="18" align="top" /> — Anthropic's Claude desktop app.
+- **[Claude Code](https://claude.com/product/claude-code)** <img src="/images/tools/claude.png" width="18" align="top" /> — Anthropic's agentic coding tool for the terminal.
+- **[Codex](https://github.com/openai/codex)** <img src="/images/tools/openai.png" width="18" align="top" /> — OpenAI's command-line coding agent.
+- **[Codex app](https://openai.com/codex)** <img src="/images/tools/openai.png" width="18" align="top" /> — OpenAI's Codex desktop app.
 
 ### 🐳 Developer tools
 
-- <img src="https://www.google.com/s2/favicons?domain=docker.com&sz=64" width="18" align="top" /> **[Docker Desktop](https://www.docker.com/products/docker-desktop/)** — builds, runs and manages Docker containers locally.
-- <img src="https://www.google.com/s2/favicons?domain=postman.com&sz=64" width="18" align="top" /> **[Postman](https://www.postman.com/)** — API client for building and testing HTTP requests.
+- **[Docker Desktop](https://www.docker.com/products/docker-desktop/)** <img src="/images/tools/docker.png" width="18" align="top" /> — builds, runs and manages Docker containers locally.
+- **[Postman](https://www.postman.com/)** <img src="/images/tools/postman.png" width="18" align="top" /> — API client for building and testing HTTP requests.
 
 ### 🌐 Browsers
 
-- <img src="https://www.google.com/s2/favicons?domain=google.com&sz=64" width="18" align="top" /> **[Google Chrome](https://www.google.com/chrome/)** — web browser.
-- <img src="https://www.google.com/s2/favicons?domain=firefox.com&sz=64" width="18" align="top" /> **[Firefox](https://www.mozilla.org/firefox/)** — web browser.
+- **[Firefox](https://www.mozilla.org/firefox/)** <img src="/images/tools/firefox.png" width="18" align="top" /> — web browser.
+- **[Google Chrome](https://www.google.com/chrome/)** <img src="/images/tools/google.png" width="18" align="top" /> — web browser.
 
 ### 💬 Messaging & communication
 
-- <img src="https://www.google.com/s2/favicons?domain=slack.com&sz=64" width="18" align="top" /> **[Slack](https://slack.com/)** — team messaging.
-- <img src="https://www.google.com/s2/favicons?domain=teams.microsoft.com&sz=64" width="18" align="top" /> **[Microsoft Teams](https://www.microsoft.com/microsoft-teams/)** — team chat, calls and meetings.
-- <img src="https://www.google.com/s2/favicons?domain=discord.com&sz=64" width="18" align="top" /> **[Discord](https://discord.com/)** — voice, video and text chat for communities.
-- <img src="https://www.google.com/s2/favicons?domain=whatsapp.com&sz=64" width="18" align="top" /> **[WhatsApp](https://www.whatsapp.com/)** — messaging desktop app.
-- <img src="https://www.google.com/s2/favicons?domain=zoom.us&sz=64" width="18" align="top" /> **[Zoom](https://zoom.us/)** — video conferencing.
+- **[Discord](https://discord.com/)** <img src="/images/tools/discord.png" width="18" align="top" /> — voice, video and text chat for communities.
+- **[Microsoft Teams](https://www.microsoft.com/microsoft-teams/)** <img src="/images/tools/msteams.png" width="18" align="top" /> — team chat, calls and meetings.
+- **[Slack](https://slack.com/)** <img src="/images/tools/slack.png" width="18" align="top" /> — team messaging.
+- **[WhatsApp](https://www.whatsapp.com/)** <img src="/images/tools/whatsapp.png" width="18" align="top" /> — messaging desktop app.
+- **[Zoom](https://zoom.us/)** <img src="/images/tools/zoom.png" width="18" align="top" /> — video conferencing.
 
 ### 🧰 Productivity & utilities
 
-- <img src="https://www.google.com/s2/favicons?domain=1password.com&sz=64" width="18" align="top" /> **[1Password](https://1password.com/)** — password manager and secure vault.
-- <img src="https://www.google.com/s2/favicons?domain=1password.com&sz=64" width="18" align="top" /> **[1Password CLI](https://developer.1password.com/docs/cli/)** — `op`, 1Password from the command line; injects secrets into scripts and tools (pairs with the desktop app's CLI integration).
-- <img src="https://www.google.com/s2/favicons?domain=microsoft.com&sz=64" width="18" align="top" /> **[Microsoft Office](https://www.microsoft.com/microsoft-365)** — office suite: Word, Excel, PowerPoint, Outlook and OneNote.
-- <img src="https://www.google.com/s2/favicons?domain=rectangleapp.com&sz=64" width="18" align="top" /> **[Rectangle](https://rectangleapp.com/)** — window manager; snap and resize windows with keyboard shortcuts.
-- <img src="https://www.google.com/s2/favicons?domain=clipy-app.com&sz=64" width="18" align="top" /> **[Clipy](https://clipy-app.com/)** — lightweight clipboard-history manager.
-- <img src="https://www.google.com/s2/favicons?domain=dropbox.com&sz=64" width="18" align="top" /> **[Dropbox](https://www.dropbox.com/)** — cloud file storage and sync.
+- **[1Password](https://1password.com/)** <img src="/images/tools/1password.png" width="18" align="top" /> — password manager and secure vault.
+- **[1Password CLI](https://developer.1password.com/docs/cli/)** <img src="/images/tools/1password.png" width="18" align="top" /> — `op`, 1Password from the command line; injects secrets into scripts and tools (pairs with the desktop app's CLI integration).
+- **[Clipy](https://clipy-app.com/)** <img src="/images/tools/clipy.png" width="18" align="top" /> — lightweight clipboard-history manager.
+- **[Dropbox](https://www.dropbox.com/)** <img src="/images/tools/dropbox.png" width="18" align="top" /> — cloud file storage and sync.
+- **[Microsoft Office](https://www.microsoft.com/microsoft-365)** <img src="/images/tools/microsoft.png" width="18" align="top" /> — office suite: Word, Excel, PowerPoint, Outlook and OneNote.
+- **[Rectangle](https://rectangleapp.com/)** <img src="/images/tools/rectangle.png" width="18" align="top" /> — window manager; snap and resize windows with keyboard shortcuts.
 
 ### 🎵 Media
 
-- <img src="https://www.google.com/s2/favicons?domain=spotify.com&sz=64" width="18" align="top" /> **[Spotify](https://www.spotify.com/)** — music streaming.
+- **[Spotify](https://www.spotify.com/)** <img src="/images/tools/spotify.png" width="18" align="top" /> — music streaming.
 
 ## 🟢 Language toolchains
 
 After Homebrew, `languages.sh` sets up the language runtimes through their
 version managers:
 
-- <img src="https://www.google.com/s2/favicons?domain=nodejs.org&sz=64" width="18" align="top" /> **[Node.js](https://nodejs.org/)** — the latest LTS via **nvm**, set as the default.
-- <img src="https://www.google.com/s2/favicons?domain=python.org&sz=64" width="18" align="top" /> **[Python](https://www.python.org/)** — the latest stable release via **pyenv**, set globally.
+- **[Node.js](https://nodejs.org/)** <img src="/images/tools/nodejs.png" width="18" align="top" /> — the latest LTS via **nvm**, set as the default.
+- **[Python](https://www.python.org/)** <img src="/images/tools/python.png" width="18" align="top" /> — the latest stable release via **pyenv**, set globally.
 
 See [Version managers](/guide/version-managers) for how these work day to day.

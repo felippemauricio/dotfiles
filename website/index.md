@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: dotfiles
+  name: felippemauricio/dotfiles
   text: A fresh Mac, set up in one command
   tagline: Sensible developer defaults for macOS on Apple Silicon — Homebrew, Oh My Zsh, a tidy zsh config, and the Node and Python toolchains. Declarative and easy to maintain.
   actions:

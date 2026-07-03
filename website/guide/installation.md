@@ -9,7 +9,7 @@
 ## Install
 
 ```sh
-git clone git@github.com:felippemauricio/dotfiles.git
+git clone https://github.com/felippemauricio/dotfiles.git
 cd dotfiles
 ./install.sh
 ```
