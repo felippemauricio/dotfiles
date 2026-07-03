@@ -40,3 +40,10 @@ fi
 cd ~/Workspace
 
 # ===================================================================================
+
+# Aliases
+
+# Muscle memory from the_silver_searcher (unmaintained) — ripgrep replaces it.
+alias ag='rg'
+
+# ===================================================================================

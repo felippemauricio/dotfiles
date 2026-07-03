@@ -129,7 +129,9 @@ from `~/.zshrc`. On every new shell it:
 - loads Homebrew into the environment (Apple Silicon `/opt/homebrew` prefix);
 - initialises **nvm** and automatically switches to the Node version in a
   project's `.nvmrc` when you `cd` into it (reverting to the default otherwise);
-- initialises **pyenv**; and
+- initialises **pyenv**;
+- defines the `ag` alias for **ripgrep** (`rg`) — muscle memory from
+  the_silver_searcher; and
 - opens your `~/Workspace` directory.
 
 ## Version managers
