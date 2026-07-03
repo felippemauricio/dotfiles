@@ -17,8 +17,8 @@ not change your shell or launch a nested zsh.
 ## `scripts/shell.sh`
 
 Copies `scripts/zshrc` to `~/.dotfiles.zsh` and sources it from `~/.zshrc` (once).
-The config sets up Homebrew, nvm and pyenv, and opens your `~/Workspace` folder on
-a new shell.
+The config sets up Homebrew, nvm and pyenv, defines the `ag` alias for ripgrep
+(`rg`), and opens your `~/Workspace` folder on a new shell.
 
 ## `scripts/languages.sh`
 
