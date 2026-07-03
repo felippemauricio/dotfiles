@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress';
 
 // Published as a GitHub Pages project site at /dotfiles/.
 export default defineConfig({
-  title: 'dotfiles',
+  title: 'felippemauricio/dotfiles',
   description:
     'Sensible developer defaults for macOS on Apple Silicon — one command sets up Homebrew, Oh My Zsh and the Node and Python toolchains.',
   lang: 'en-AU',
