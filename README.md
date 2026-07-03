@@ -49,34 +49,39 @@ re-run `brew bundle`.
 
 - <img src="website/public/images/tools/homebrew.png" width="18" align="top" /> **[Homebrew](https://brew.sh/)** — the macOS package manager that installs everything below.
 
-### ⌨️ Command-line tools
+### ⌨️ Developer command-line tools
+
+- <img src="website/public/images/tools/github.png" width="18" align="top" /> **[gh](https://cli.github.com/)** — GitHub from the terminal: pull requests, issues and repositories.
+- <img src="website/public/images/tools/git.png" width="18" align="top" /> **[git](https://git-scm.com/)** — distributed version control.
+- <img src="website/public/images/tools/gitlab.png" width="18" align="top" /> **[glab](https://gitlab.com/gitlab-org/cli)** — GitLab from the terminal: merge requests, issues and pipelines.
+- <img src="website/public/images/tools/jq.png" width="18" align="top" /> **[jq](https://jqlang.org/)** — command-line JSON processor for slicing, filtering and transforming JSON.
+- 🔍 **[ripgrep](https://github.com/BurntSushi/ripgrep)** — extremely fast recursive search (`rg`) that respects `.gitignore`.
+- <img src="website/public/images/tools/terraform.png" width="18" align="top" /> **[terraform](https://developer.hashicorp.com/terraform)** — infrastructure as code; provisions and manages cloud resources declaratively. Installed from the official `hashicorp/tap`.
+- <img src="website/public/images/tools/tmux.png" width="18" align="top" /> **[tmux](https://github.com/tmux/tmux)** — terminal multiplexer: splits the terminal into panes and keeps sessions alive; used for the Claude Code teammate-pane workflow.
+- <img src="website/public/images/tools/homebrew-formulae.png" width="18" align="top" /> **[watch](https://formulae.brew.sh/formula/watch)** — re-runs a command on a fixed interval and shows its latest output.
+
+#### ☁️ Cloud CLIs
 
 - <img src="website/public/images/tools/aws.png" width="18" align="top" /> **[awscli](https://aws.amazon.com/cli/)** — Amazon Web Services command-line interface.
 - <img src="website/public/images/tools/azure.png" width="18" align="top" /> **[azure-cli](https://learn.microsoft.com/cli/azure/)** — Microsoft Azure command-line interface.
-- <img src="website/public/images/tools/github.png" width="18" align="top" /> **[gh](https://cli.github.com/)** — GitHub from the terminal: pull requests, issues and repositories.
-- <img src="website/public/images/tools/git.png" width="18" align="top" /> **[git](https://git-scm.com/)** — distributed version control.
-- <img src="website/public/images/tools/jq.png" width="18" align="top" /> **[jq](https://jqlang.org/)** — command-line JSON processor for slicing, filtering and transforming JSON.
+
+#### 🔄 Version managers
+
 - <img src="website/public/images/tools/nodejs.png" width="18" align="top" /> **[nvm](https://github.com/nvm-sh/nvm)** — Node Version Manager; install and switch between Node.js versions.
 - <img src="website/public/images/tools/python.png" width="18" align="top" /> **[pyenv](https://github.com/pyenv/pyenv)** — Python version manager; install and switch between Python versions.
-- <img src="website/public/images/tools/github.png" width="18" align="top" /> **[ripgrep](https://github.com/BurntSushi/ripgrep)** — extremely fast recursive search (`rg`) that respects `.gitignore`.
-- <img src="website/public/images/tools/terraform.png" width="18" align="top" /> **[terraform](https://developer.hashicorp.com/terraform)** — infrastructure as code; provisions and manages cloud resources declaratively. Installed from the official `hashicorp/tap`.
-- <img src="website/public/images/tools/github.png" width="18" align="top" /> **[tmux](https://github.com/tmux/tmux)** — terminal multiplexer: splits the terminal into panes and keeps sessions alive; used for the Claude Code teammate-pane workflow.
-- <img src="website/public/images/tools/homebrew-formulae.png" width="18" align="top" /> **[watch](https://formulae.brew.sh/formula/watch)** — re-runs a command on a fixed interval and shows its latest output.
+
+### 🐳 Developer tools
+
+- <img src="website/public/images/tools/cursor.png" width="18" align="top" /> **[Cursor](https://cursor.com/)** — AI-first code editor (a Visual Studio Code fork).
+- <img src="website/public/images/tools/docker.png" width="18" align="top" /> **[Docker Desktop](https://www.docker.com/products/docker-desktop/)** — builds, runs and manages Docker containers locally.
+- <img src="website/public/images/tools/iterm2.png" width="18" align="top" /> **[iTerm2](https://iterm2.com/)** — feature-rich terminal emulator for macOS.
+- <img src="website/public/images/tools/postman.png" width="18" align="top" /> **[Postman](https://www.postman.com/)** — API client for building and testing HTTP requests.
+- <img src="website/public/images/tools/vscode.png" width="18" align="top" /> **[Visual Studio Code](https://code.visualstudio.com/)** — extensible code editor.
+- <img src="website/public/images/tools/zed.png" width="18" align="top" /> **[Zed](https://zed.dev/)** — high-performance, collaborative code editor.
 
 ### 🧠 AI & machine learning
 
 - 🍏 **[apfel](https://apfel.franzai.com)** — Apple Intelligence from the command line, with an OpenAI-compatible API server.
-
-### 🐚 Shell — Oh My Zsh
-
-- <img src="website/public/images/tools/oh-my-zsh.png" width="18" align="top" /> **[Oh My Zsh](https://ohmyz.sh/)** — community framework for managing your zsh configuration (themes, plugins, sensible defaults). The dotfiles zsh config is layered on top — see [Shell configuration](#shell-configuration).
-
-### 🧑‍💻 Applications — code editors & terminals
-
-- <img src="website/public/images/tools/cursor.png" width="18" align="top" /> **[Cursor](https://cursor.com/)** — AI-first code editor (a Visual Studio Code fork).
-- <img src="website/public/images/tools/iterm2.png" width="18" align="top" /> **[iTerm2](https://iterm2.com/)** — feature-rich terminal emulator for macOS.
-- <img src="website/public/images/tools/vscode.png" width="18" align="top" /> **[Visual Studio Code](https://code.visualstudio.com/)** — extensible code editor.
-- <img src="website/public/images/tools/zed.png" width="18" align="top" /> **[Zed](https://zed.dev/)** — high-performance, collaborative code editor.
 
 ### 🤖 AI assistants & coding agents
 
@@ -86,10 +91,9 @@ re-run `brew bundle`.
 - <img src="website/public/images/tools/openai.png" width="18" align="top" /> **[Codex](https://github.com/openai/codex)** — OpenAI's command-line coding agent.
 - <img src="website/public/images/tools/openai.png" width="18" align="top" /> **[Codex app](https://openai.com/codex)** — OpenAI's Codex desktop app.
 
-### 🐳 Developer tools
+### 🐚 Shell — Oh My Zsh
 
-- <img src="website/public/images/tools/docker.png" width="18" align="top" /> **[Docker Desktop](https://www.docker.com/products/docker-desktop/)** — builds, runs and manages Docker containers locally.
-- <img src="website/public/images/tools/postman.png" width="18" align="top" /> **[Postman](https://www.postman.com/)** — API client for building and testing HTTP requests.
+- <img src="website/public/images/tools/oh-my-zsh.png" width="18" align="top" /> **[Oh My Zsh](https://ohmyz.sh/)** — community framework for managing your zsh configuration (themes, plugins, sensible defaults). The dotfiles zsh config is layered on top — see [Shell configuration](#shell-configuration).
 
 ### 🌐 Browsers
 

@@ -19,6 +19,14 @@
   --vp-c-border: #22304f;
 }
 
+/* Tool-list icons: the theme reset makes every img block-level, which pushes
+   each icon onto its own line; keep icons inside list items inline. */
+.vp-doc li img {
+  display: inline-block;
+  margin: 0;
+  vertical-align: -0.2em;
+}
+
 /* Home hero: brand-tinted gradient name. */
 .VPHome .name .clip {
   background: linear-gradient(120deg, #3fb950, #2bd4a8);
