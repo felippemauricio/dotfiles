@@ -9,6 +9,7 @@ tap "hashicorp/tap"
 brew "apfel"   # Apple Intelligence CLI + OpenAI-compatible API server
 brew "git"
 brew "gh"        # GitHub CLI
+brew "glab"      # GitLab CLI
 brew "nvm"       # Node version manager
 brew "pyenv"     # Python version manager
 brew "awscli"    # AWS command-line interface
