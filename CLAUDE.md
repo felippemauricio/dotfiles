@@ -28,6 +28,11 @@ dotfiles/
 
 - **Add or remove packages by editing the `Brewfile`**, never by editing the
   scripts. Formulae use `brew "name"`; applications use `cask "name"`.
+- **Keep every list alphabetical.** The `Brewfile` sections (formulae sorted by
+  tool name, ignoring a tap prefix), and the tool lists in the `README` and on
+  the website (`website/guide/what-gets-installed.md`), stay in alphabetical
+  order within each section or category. A new package lands in all three
+  places, in order.
 - **Version managers:** Node is managed with nvm and Python with pyenv. Do not
   introduce asdf or mise.
 - Every script must stay runnable on its own and is `set -euo pipefail`.
