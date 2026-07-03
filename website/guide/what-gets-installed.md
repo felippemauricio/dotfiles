@@ -25,6 +25,7 @@ Installed as Homebrew **formulae**.
 - <img src="https://www.google.com/s2/favicons?domain=python.org&sz=64" width="18" align="top" /> **[pyenv](https://github.com/pyenv/pyenv)** — Python version manager; install and switch between Python versions.
 - <img src="https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=64" width="18" align="top" /> **[awscli](https://aws.amazon.com/cli/)** — Amazon Web Services command-line interface.
 - <img src="https://www.google.com/s2/favicons?domain=azure.microsoft.com&sz=64" width="18" align="top" /> **[azure-cli](https://learn.microsoft.com/cli/azure/)** — Microsoft Azure command-line interface.
+- <img src="https://www.google.com/s2/favicons?domain=terraform.io&sz=64" width="18" align="top" /> **[terraform](https://developer.hashicorp.com/terraform)** — infrastructure as code; provisions and manages cloud resources declaratively. Installed from the official `hashicorp/tap`.
 - <img src="https://www.google.com/s2/favicons?domain=jqlang.github.io&sz=64" width="18" align="top" /> **[jq](https://jqlang.github.io/jq/)** — command-line JSON processor for slicing, filtering and transforming JSON.
 - <img src="https://www.google.com/s2/favicons?domain=github.com&sz=64" width="18" align="top" /> **[ripgrep](https://github.com/BurntSushi/ripgrep)** — extremely fast recursive search (`rg`) that respects `.gitignore`.
 - <img src="https://www.google.com/s2/favicons?domain=formulae.brew.sh&sz=64" width="18" align="top" /> **[watch](https://formulae.brew.sh/formula/watch)** — re-runs a command on a fixed interval and shows its latest output.
@@ -75,6 +76,7 @@ Installed as Homebrew **casks**.
 ### 🧰 Productivity & utilities
 
 - <img src="https://www.google.com/s2/favicons?domain=1password.com&sz=64" width="18" align="top" /> **[1Password](https://1password.com/)** — password manager and secure vault.
+- <img src="https://www.google.com/s2/favicons?domain=1password.com&sz=64" width="18" align="top" /> **[1Password CLI](https://developer.1password.com/docs/cli/)** — `op`, 1Password from the command line; injects secrets into scripts and tools (pairs with the desktop app's CLI integration).
 - <img src="https://www.google.com/s2/favicons?domain=microsoft.com&sz=64" width="18" align="top" /> **[Microsoft Office](https://www.microsoft.com/microsoft-365)** — office suite: Word, Excel, PowerPoint, Outlook and OneNote.
 - <img src="https://www.google.com/s2/favicons?domain=rectangleapp.com&sz=64" width="18" align="top" /> **[Rectangle](https://rectangleapp.com/)** — window manager; snap and resize windows with keyboard shortcuts.
 - <img src="https://www.google.com/s2/favicons?domain=clipy-app.com&sz=64" width="18" align="top" /> **[Clipy](https://clipy-app.com/)** — lightweight clipboard-history manager.
