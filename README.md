@@ -51,6 +51,7 @@ re-run `brew bundle`.
 
 ### ⌨️ Developer command-line tools
 
+- <img src="website/public/images/tools/atlassian.png" width="18" align="top" /> **[acli](https://developer.atlassian.com/cloud/acli/)** — Atlassian command-line interface: Jira and Confluence from the terminal. Installed from the official `atlassian/acli` tap.
 - <img src="website/public/images/tools/github.png" width="18" align="top" /> **[gh](https://cli.github.com/)** — GitHub from the terminal: pull requests, issues and repositories.
 - <img src="website/public/images/tools/git.png" width="18" align="top" /> **[git](https://git-scm.com/)** — distributed version control.
 - <img src="website/public/images/tools/gitlab.png" width="18" align="top" /> **[glab](https://gitlab.com/gitlab-org/cli)** — GitLab from the terminal: merge requests, issues and pipelines.

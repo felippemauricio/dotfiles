@@ -18,6 +18,7 @@ first) is declared in the [`Brewfile`](/reference/brewfile) and applied with
 
 Installed as Homebrew **formulae**.
 
+- **[acli](https://developer.atlassian.com/cloud/acli/)** <img src="/images/tools/atlassian.png" width="18" align="top" /> — Atlassian command-line interface: Jira and Confluence from the terminal. Installed from the official `atlassian/acli` tap.
 - **[gh](https://cli.github.com/)** <img src="/images/tools/github.png" width="18" align="top" /> — GitHub from the terminal: pull requests, issues and repositories.
 - **[git](https://git-scm.com/)** <img src="/images/tools/git.png" width="18" align="top" /> — distributed version control.
 - **[glab](https://gitlab.com/gitlab-org/cli)** <img src="/images/tools/gitlab.png" width="18" align="top" /> — GitLab from the terminal: merge requests, issues and pipelines.
