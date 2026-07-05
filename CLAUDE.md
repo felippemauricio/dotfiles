@@ -16,6 +16,7 @@ lives at `/opt/homebrew` and shell paths must use that prefix (never
 dotfiles/
 ├── Brewfile           # declarative list of Homebrew formulae and casks
 ├── install.sh         # entry point; runs the scripts below in order
+├── website/           # VitePress docs site, deployed to GitHub Pages
 └── scripts/
     ├── homebrew.sh    # installs Homebrew, then `brew bundle`
     ├── oh-my-zsh.sh   # installs the Xcode CLI tools and Oh My Zsh
@@ -33,6 +34,13 @@ dotfiles/
   the website (`website/guide/what-gets-installed.md`), stay in alphabetical
   order within each section or category. A new package lands in all three
   places, in order.
+- **The website must actually ship.** The docs site (`website/`) deploys to
+  <https://felippemauricio.github.io/dotfiles/> via the "Deploy docs to Pages"
+  workflow (`.github/workflows/pages.yml`) on every push to `master`. A change
+  is not done at merge time: confirm the workflow run for the merge commit
+  succeeded (`gh run list --workflow=pages.yml`). The deploy step fails
+  transiently ("Deployment failed, try again later") — when it does, re-run it
+  with `gh run rerun <run-id> --failed` until the site is live.
 - **Version managers:** Node is managed with nvm and Python with pyenv. Do not
   introduce asdf or mise.
 - Every script must stay runnable on its own and is `set -euo pipefail`.
