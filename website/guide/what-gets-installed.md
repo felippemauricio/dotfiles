@@ -53,9 +53,10 @@ Installed as Homebrew **casks**.
 
 ## 🧠 AI & machine learning
 
-Installed as a Homebrew **formula**.
+Installed as Homebrew **formulae**.
 
 - **[apfel](https://apfel.franzai.com)** 🍏 — Apple Intelligence from the command line, with an OpenAI-compatible API server.
+- **[ollama](https://ollama.com/)** 🦙 — runs open large language models locally (Llama, Gemma, Qwen and more), with an OpenAI-compatible API server. Start the background service with `brew services start ollama`.
 
 ## 🤖 AI assistants & coding agents
 

@@ -17,6 +17,7 @@ brew "git"
 brew "glab"                    # GitLab CLI
 brew "jq"                      # JSON processor
 brew "nvm"                     # Node version manager
+brew "ollama"                  # run large language models locally (OpenAI-compatible API)
 brew "pyenv"                   # Python version manager
 brew "ripgrep"                 # fast recursive search
 brew "hashicorp/tap/terraform" # infrastructure as code (official HashiCorp tap)

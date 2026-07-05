@@ -85,6 +85,7 @@ re-run `brew bundle`.
 ### 🧠 AI & machine learning
 
 - 🍏 **[apfel](https://apfel.franzai.com)** — Apple Intelligence from the command line, with an OpenAI-compatible API server.
+- 🦙 **[ollama](https://ollama.com/)** — runs open large language models locally (Llama, Gemma, Qwen and more), with an OpenAI-compatible API server. Start the background service with `brew services start ollama`.
 
 ### 🤖 AI assistants & coding agents
 
