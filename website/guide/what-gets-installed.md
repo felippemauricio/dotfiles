@@ -27,7 +27,6 @@ Installed as Homebrew **formulae**.
 - **[ripgrep](https://github.com/BurntSushi/ripgrep)** 🔍 — extremely fast recursive search (`rg`) that respects `.gitignore`.
 - **[terraform](https://developer.hashicorp.com/terraform)** <img src="/images/tools/terraform.png" width="18" align="top" /> — infrastructure as code; provisions and manages cloud resources declaratively. Installed from the official `hashicorp/tap`.
 - **[tmux](https://github.com/tmux/tmux)** <img src="/images/tools/tmux.png" width="18" align="top" /> — terminal multiplexer: splits the terminal into panes and keeps sessions alive; used for the Claude Code teammate-pane workflow.
-- **[watch](https://formulae.brew.sh/formula/watch)** <img src="/images/tools/homebrew-formulae.png" width="18" align="top" /> — re-runs a command on a fixed interval and shows its latest output.
 
 ### ☁️ Cloud CLIs
 
