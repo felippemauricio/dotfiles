@@ -23,6 +23,7 @@ Installed as Homebrew **formulae**.
 - **[git](https://git-scm.com/)** <img src="/images/tools/git.png" width="18" align="top" /> — distributed version control.
 - **[glab](https://gitlab.com/gitlab-org/cli)** <img src="/images/tools/gitlab.png" width="18" align="top" /> — GitLab from the terminal: merge requests, issues and pipelines.
 - **[jq](https://jqlang.org/)** <img src="/images/tools/jq.png" width="18" align="top" /> — command-line JSON processor for slicing, filtering and transforming JSON.
+- **[mitmproxy](https://mitmproxy.org/)** <img src="/images/tools/mitmproxy.png" width="18" align="top" /> — interactive HTTPS proxy for inspecting and debugging HTTP(S) traffic (`mitmproxy`, `mitmweb` and `mitmdump`). Command-line tool, but installed as a Homebrew cask (its only distribution).
 - **[ripgrep](https://github.com/BurntSushi/ripgrep)** 🔍 — extremely fast recursive search (`rg`) that respects `.gitignore`.
 - **[terraform](https://developer.hashicorp.com/terraform)** <img src="/images/tools/terraform.png" width="18" align="top" /> — infrastructure as code; provisions and manages cloud resources declaratively. Installed from the official `hashicorp/tap`.
 - **[tmux](https://github.com/tmux/tmux)** <img src="/images/tools/tmux.png" width="18" align="top" /> — terminal multiplexer: splits the terminal into panes and keeps sessions alive; used for the Claude Code teammate-pane workflow.
@@ -43,6 +44,7 @@ Installed as Homebrew **formulae**.
 Installed as Homebrew **casks**.
 
 - **[Cursor](https://cursor.com/)** <img src="/images/tools/cursor.png" width="18" align="top" /> — AI-first code editor (a Visual Studio Code fork).
+- **[DBeaver](https://dbeaver.io/)** <img src="/images/tools/dbeaver.png" width="18" align="top" /> — universal database client; browse schemas, run SQL and inspect data. Installed as the free Community Edition.
 - **[Docker Desktop](https://www.docker.com/products/docker-desktop/)** <img src="/images/tools/docker.png" width="18" align="top" /> — builds, runs and manages Docker containers locally.
 - **[iTerm2](https://iterm2.com/)** <img src="/images/tools/iterm2.png" width="18" align="top" /> — feature-rich terminal emulator for macOS.
 - **[Postman](https://www.postman.com/)** <img src="/images/tools/postman.png" width="18" align="top" /> — API client for building and testing HTTP requests.
