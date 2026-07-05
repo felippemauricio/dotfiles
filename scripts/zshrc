@@ -16,8 +16,11 @@ load-nvmrc() {
   if [[ -f .nvmrc && -r .nvmrc ]]; then
     nvm use
   elif [[ $(nvm version) != $(nvm version default) ]]; then
-    echo "Reverting to nvm default version"
-    nvm use default
+    local default_version=$(nvm version default 2>/dev/null)
+    if [[ "$default_version" != "N/A" ]]; then
+      echo "Reverting to nvm default version"
+      nvm use default
+    fi
   fi
 }
 add-zsh-hook chpwd load-nvmrc
@@ -28,7 +31,7 @@ load-nvmrc
 # pyenv — Python Version Manager
 
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
@@ -45,8 +48,6 @@ cd ~/Workspace
 
 # Muscle memory from the_silver_searcher (unmaintained) — ripgrep replaces it.
 alias ag='rg'
-
-# ===================================================================================
 
 # ===================================================================================
 
