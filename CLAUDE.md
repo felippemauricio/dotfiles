@@ -29,11 +29,13 @@ dotfiles/
 
 - **Add or remove packages by editing the `Brewfile`**, never by editing the
   scripts. Formulae use `brew "name"`; applications use `cask "name"`.
+- **A package change lands in three places, in the same commit:** the
+  `Brewfile`, the tool list in the `README.md`, and the website page
+  (`website/guide/what-gets-installed.md`). Updating only one or two of them is
+  an incomplete change — sweep all three before opening the PR.
 - **Keep every list alphabetical.** The `Brewfile` sections (formulae sorted by
   tool name, ignoring a tap prefix), and the tool lists in the `README` and on
-  the website (`website/guide/what-gets-installed.md`), stay in alphabetical
-  order within each section or category. A new package lands in all three
-  places, in order.
+  the website, stay in alphabetical order within each section or category.
 - **The website must actually ship.** The docs site (`website/`) deploys to
   <https://felippemauricio.github.io/dotfiles/> via the "Deploy docs to Pages"
   workflow (`.github/workflows/pages.yml`) on every push to `master`. A change
