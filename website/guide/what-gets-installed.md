@@ -12,7 +12,7 @@ first) is declared in the [`Brewfile`](/reference/brewfile) and applied with
 
 ## 🍺 Homebrew
 
-- **[Homebrew](https://brew.sh/)** <img src="/images/tools/homebrew.png" width="18" align="top" /> — the macOS package manager that installs everything on this page. Formulae (`brew`) are command-line tools; casks (`cask`) are GUI applications.
+- **[Homebrew](https://brew.sh/)** <img src="/images/tools/homebrew.png" width="18" align="top" /> — the macOS package manager that installs every formula and cask on this page (Oh My Zsh is the exception — see its section). Formulae (`brew`) are command-line tools; casks (`cask`) are GUI applications.
 
 ## ⌨️ Developer command-line tools
 
@@ -67,6 +67,9 @@ Installed as Homebrew **casks**.
 - **[Codex app](https://openai.com/codex)** <img src="/images/tools/codex.png" width="18" align="top" /> — OpenAI's Codex desktop app.
 
 ## 🐚 Shell — Oh My Zsh
+
+Not a Homebrew package — installed by [`scripts/oh-my-zsh.sh`](/guide/scripts)
+using the official Oh My Zsh installer.
 
 - **[Oh My Zsh](https://ohmyz.sh/)** <img src="/images/tools/oh-my-zsh.png" width="18" align="top" /> — community framework for managing your zsh configuration (themes, plugins, sensible defaults).
 - **The dotfiles zsh config** (`~/.dotfiles.zsh`) <img src="/images/tools/zsh.png" width="18" align="top" /> — loads Homebrew, initialises **nvm** (with automatic `.nvmrc` switching) and **pyenv**, and opens your `~/Workspace` on every new shell. See [The install scripts](/guide/scripts).

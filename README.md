@@ -47,7 +47,7 @@ re-run `brew bundle`.
 
 ### 🍺 Homebrew
 
-- <img src="website/public/images/tools/homebrew.png" width="18" align="top" /> **[Homebrew](https://brew.sh/)** — the macOS package manager that installs everything below.
+- <img src="website/public/images/tools/homebrew.png" width="18" align="top" /> **[Homebrew](https://brew.sh/)** — the macOS package manager that installs every formula and cask below (Oh My Zsh is the exception — see its section).
 
 ### ⌨️ Developer command-line tools
 
@@ -94,6 +94,9 @@ re-run `brew bundle`.
 - <img src="website/public/images/tools/codex.png" width="18" align="top" /> **[Codex app](https://openai.com/codex)** — OpenAI's Codex desktop app.
 
 ### 🐚 Shell — Oh My Zsh
+
+Not a Homebrew package — installed by `scripts/oh-my-zsh.sh` using the official
+Oh My Zsh installer.
 
 - <img src="website/public/images/tools/oh-my-zsh.png" width="18" align="top" /> **[Oh My Zsh](https://ohmyz.sh/)** — community framework for managing your zsh configuration (themes, plugins, sensible defaults). The dotfiles zsh config is layered on top — see [Shell configuration](#shell-configuration).
 
