@@ -60,7 +60,7 @@ Installed as Homebrew **formulae**.
 
 Installed as Homebrew **casks**.
 
-- **[ChatGPT Atlas](https://openai.com/)** <img src="/images/tools/atlas.png" width="18" align="top" /> — OpenAI's ChatGPT desktop browser.
+- **[ChatGPT Atlas](https://openai.com/)** <img src="/images/tools/openai.png" width="18" align="top" /> — OpenAI's ChatGPT desktop browser.
 - **[Claude](https://claude.ai/)** <img src="/images/tools/claude-ai.png" width="18" align="top" /> — Anthropic's Claude desktop app.
 - **[Claude Code](https://claude.com/product/claude-code)** <img src="/images/tools/claude.png" width="18" align="top" /> — Anthropic's agentic coding tool for the terminal.
 - **[Codex](https://github.com/openai/codex)** <img src="/images/tools/codex.png" width="18" align="top" /> — OpenAI's command-line coding agent.
