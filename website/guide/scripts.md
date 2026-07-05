@@ -18,7 +18,10 @@ not change your shell or launch a nested zsh.
 
 Copies `scripts/zshrc` to `~/.dotfiles.zsh` and sources it from `~/.zshrc` (once).
 The config sets up Homebrew, nvm and pyenv, defines the `ag` alias for ripgrep
-(`rg`), and opens your `~/Workspace` folder on a new shell.
+(`rg`), provides the `ct` command — opens (or reattaches to) a tmux session named
+after the current directory and runs Claude Code inside it (`ct <name>` keeps
+several sessions for the same project apart) — and opens your `~/Workspace`
+folder on a new shell.
 
 ## `scripts/languages.sh`
 
