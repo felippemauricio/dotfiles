@@ -79,7 +79,6 @@ re-run `brew bundle`.
 - <img src="website/public/images/tools/iterm2.png" width="18" align="top" /> **[iTerm2](https://iterm2.com/)** — feature-rich terminal emulator for macOS.
 - <img src="website/public/images/tools/postman.png" width="18" align="top" /> **[Postman](https://www.postman.com/)** — API client for building and testing HTTP requests.
 - <img src="website/public/images/tools/vscode.png" width="18" align="top" /> **[Visual Studio Code](https://code.visualstudio.com/)** — extensible code editor.
-- <img src="website/public/images/tools/zed.png" width="18" align="top" /> **[Zed](https://zed.dev/)** — high-performance, collaborative code editor.
 
 ### 🧠 AI & machine learning
 
@@ -88,11 +87,11 @@ re-run `brew bundle`.
 
 ### 🤖 AI assistants & coding agents
 
-- <img src="website/public/images/tools/openai.png" width="18" align="top" /> **[ChatGPT Atlas](https://openai.com/)** — OpenAI's ChatGPT desktop browser.
+- <img src="website/public/images/tools/atlas.png" width="18" align="top" /> **[ChatGPT Atlas](https://openai.com/)** — OpenAI's ChatGPT desktop browser.
 - <img src="website/public/images/tools/claude-ai.png" width="18" align="top" /> **[Claude](https://claude.ai/)** — Anthropic's Claude desktop app.
 - <img src="website/public/images/tools/claude.png" width="18" align="top" /> **[Claude Code](https://claude.com/product/claude-code)** — Anthropic's agentic coding tool for the terminal.
-- <img src="website/public/images/tools/openai.png" width="18" align="top" /> **[Codex](https://github.com/openai/codex)** — OpenAI's command-line coding agent.
-- <img src="website/public/images/tools/openai.png" width="18" align="top" /> **[Codex app](https://openai.com/codex)** — OpenAI's Codex desktop app.
+- <img src="website/public/images/tools/codex.png" width="18" align="top" /> **[Codex](https://github.com/openai/codex)** — OpenAI's command-line coding agent.
+- <img src="website/public/images/tools/codex.png" width="18" align="top" /> **[Codex app](https://openai.com/codex)** — OpenAI's Codex desktop app.
 
 ### 🐚 Shell — Oh My Zsh
 
@@ -100,7 +99,7 @@ re-run `brew bundle`.
 
 ### 🌐 Browsers
 
-- <img src="website/public/images/tools/google.png" width="18" align="top" /> **[Google Chrome](https://www.google.com/chrome/)** — web browser.
+- <img src="website/public/images/tools/chrome.png" width="18" align="top" /> **[Google Chrome](https://www.google.com/chrome/)** — web browser.
 
 ### 💬 Messaging & communication
 

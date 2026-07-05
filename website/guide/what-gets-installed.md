@@ -48,7 +48,6 @@ Installed as Homebrew **casks**.
 - **[iTerm2](https://iterm2.com/)** <img src="/images/tools/iterm2.png" width="18" align="top" /> — feature-rich terminal emulator for macOS.
 - **[Postman](https://www.postman.com/)** <img src="/images/tools/postman.png" width="18" align="top" /> — API client for building and testing HTTP requests.
 - **[Visual Studio Code](https://code.visualstudio.com/)** <img src="/images/tools/vscode.png" width="18" align="top" /> — extensible code editor.
-- **[Zed](https://zed.dev/)** <img src="/images/tools/zed.png" width="18" align="top" /> — high-performance, collaborative code editor.
 
 ## 🧠 AI & machine learning
 
@@ -61,11 +60,11 @@ Installed as Homebrew **formulae**.
 
 Installed as Homebrew **casks**.
 
-- **[ChatGPT Atlas](https://openai.com/)** <img src="/images/tools/openai.png" width="18" align="top" /> — OpenAI's ChatGPT desktop browser.
+- **[ChatGPT Atlas](https://openai.com/)** <img src="/images/tools/atlas.png" width="18" align="top" /> — OpenAI's ChatGPT desktop browser.
 - **[Claude](https://claude.ai/)** <img src="/images/tools/claude-ai.png" width="18" align="top" /> — Anthropic's Claude desktop app.
 - **[Claude Code](https://claude.com/product/claude-code)** <img src="/images/tools/claude.png" width="18" align="top" /> — Anthropic's agentic coding tool for the terminal.
-- **[Codex](https://github.com/openai/codex)** <img src="/images/tools/openai.png" width="18" align="top" /> — OpenAI's command-line coding agent.
-- **[Codex app](https://openai.com/codex)** <img src="/images/tools/openai.png" width="18" align="top" /> — OpenAI's Codex desktop app.
+- **[Codex](https://github.com/openai/codex)** <img src="/images/tools/codex.png" width="18" align="top" /> — OpenAI's command-line coding agent.
+- **[Codex app](https://openai.com/codex)** <img src="/images/tools/codex.png" width="18" align="top" /> — OpenAI's Codex desktop app.
 
 ## 🐚 Shell — Oh My Zsh
 
@@ -76,7 +75,7 @@ Installed as Homebrew **casks**.
 
 Installed as Homebrew **casks**.
 
-- **[Google Chrome](https://www.google.com/chrome/)** <img src="/images/tools/google.png" width="18" align="top" /> — web browser.
+- **[Google Chrome](https://www.google.com/chrome/)** <img src="/images/tools/chrome.png" width="18" align="top" /> — web browser.
 
 ## 💬 Messaging & communication
 
