@@ -48,5 +48,4 @@ cask "slack"              # team messaging
 cask "spotify"            # music streaming
 cask "visual-studio-code" # extensible code editor
 cask "whatsapp"           # messaging desktop app
-cask "zed"                # high-performance, collaborative code editor
 cask "zoom"               # video conferencing
