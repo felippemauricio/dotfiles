@@ -47,3 +47,21 @@ cd ~/Workspace
 alias ag='rg'
 
 # ===================================================================================
+
+# ===================================================================================
+
+# Claude Code inside tmux with one command. `ct` opens (or reattaches to) a
+# tmux session named after the current directory and runs claude in it;
+# `ct <name>` keeps several sessions for the same project apart. Inside an
+# existing tmux session it simply runs claude.
+
+ct() {
+  if [ -n "${TMUX-}" ]; then
+    claude "$@"
+    return
+  fi
+  local dir_slug="${${PWD:t}//[^a-zA-Z0-9-]/-}"
+  local name="claude-${1:-$dir_slug}"
+  [ $# -gt 0 ] && shift
+  tmux new-session -A -s "$name" -c "$PWD" claude "$@"
+}
