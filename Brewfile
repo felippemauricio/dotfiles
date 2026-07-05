@@ -37,7 +37,6 @@ cask "dbeaver-community"  # DBeaver Community Edition — universal database cli
 cask "discord"            # voice, video and text chat for communities
 cask "docker-desktop"     # builds, runs and manages Docker containers locally
 cask "dropbox"            # cloud file storage and sync
-cask "firefox"            # web browser
 cask "google-chrome"      # web browser
 cask "iterm2"             # feature-rich terminal emulator for macOS
 cask "microsoft-office"   # Word, Excel, PowerPoint, Outlook and OneNote

@@ -76,7 +76,6 @@ Installed as Homebrew **casks**.
 
 Installed as Homebrew **casks**.
 
-- **[Firefox](https://www.mozilla.org/firefox/)** <img src="/images/tools/firefox.png" width="18" align="top" /> — web browser.
 - **[Google Chrome](https://www.google.com/chrome/)** <img src="/images/tools/google.png" width="18" align="top" /> — web browser.
 
 ## 💬 Messaging & communication

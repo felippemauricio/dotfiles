@@ -100,7 +100,6 @@ re-run `brew bundle`.
 
 ### 🌐 Browsers
 
-- <img src="website/public/images/tools/firefox.png" width="18" align="top" /> **[Firefox](https://www.mozilla.org/firefox/)** — web browser.
 - <img src="website/public/images/tools/google.png" width="18" align="top" /> **[Google Chrome](https://www.google.com/chrome/)** — web browser.
 
 ### 💬 Messaging & communication
