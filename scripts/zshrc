@@ -51,12 +51,12 @@ alias ag='rg'
 
 # ===================================================================================
 
-# Claude Code inside tmux with one command. `ct` opens (or reattaches to) a
-# tmux session named after the current directory and runs claude in it;
-# `ct <name>` keeps several sessions for the same project apart. Inside an
-# existing tmux session it simply runs claude.
+# Claude Code inside tmux with one command. `claude-tmux` opens (or reattaches
+# to) a tmux session named after the current directory and runs claude in it;
+# `claude-tmux <name>` keeps several sessions for the same project apart.
+# Inside an existing tmux session it simply runs claude.
 
-ct() {
+claude-tmux() {
   if [ -n "${TMUX-}" ]; then
     claude "$@"
     return
