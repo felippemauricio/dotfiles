@@ -48,21 +48,3 @@ cd ~/Workspace
 
 # Muscle memory from the_silver_searcher (unmaintained) — ripgrep replaces it.
 alias ag='rg'
-
-# ===================================================================================
-
-# Claude Code inside tmux with one command. `claude-tmux` opens (or reattaches
-# to) a tmux session named after the current directory and runs claude in it;
-# `claude-tmux <name>` keeps several sessions for the same project apart.
-# Inside an existing tmux session it simply runs claude.
-
-claude-tmux() {
-  if [ -n "${TMUX-}" ]; then
-    claude "$@"
-    return
-  fi
-  local dir_slug="${${PWD:t}//[^a-zA-Z0-9-]/-}"
-  local name="claude-${1:-$dir_slug}"
-  [ $# -gt 0 ] && shift
-  tmux new-session -A -s "$name" -c "$PWD" claude "$@"
-}
