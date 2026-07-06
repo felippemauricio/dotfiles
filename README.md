@@ -60,7 +60,6 @@ re-run `brew bundle`.
 - 🔍 **[ripgrep](https://github.com/BurntSushi/ripgrep)** — extremely fast recursive search (`rg`) that respects `.gitignore`.
 - <img src="website/public/images/tools/terraform.png" width="18" align="top" /> **[terraform](https://developer.hashicorp.com/terraform)** — infrastructure as code; provisions and manages cloud resources declaratively. Installed from the official `hashicorp/tap`.
 - <img src="website/public/images/tools/terragrunt.png" width="18" align="top" /> **[terragrunt](https://terragrunt.gruntwork.io/)** — thin wrapper around terraform that keeps configurations DRY across environments.
-- <img src="website/public/images/tools/tmux.png" width="18" align="top" /> **[tmux](https://github.com/tmux/tmux)** — terminal multiplexer: splits the terminal into panes and keeps sessions alive; used for the Claude Code teammate-pane workflow.
 
 #### ☁️ Cloud CLIs
 
