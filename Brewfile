@@ -4,9 +4,9 @@
 # Keep each section in alphabetical order (formulae by tool name).
 
 # Taps (third-party formula repositories)
-tap "anomalyco/tap"
-tap "atlassian/acli"
-tap "hashicorp/tap"
+tap "anomalyco/tap"            # opencode's always-up-to-date tap
+tap "atlassian/acli"           # Atlassian CLI (acli)
+tap "hashicorp/tap"            # Terraform and other HashiCorp tools
 
 # Command-line tools
 brew "atlassian/acli/acli"     # Atlassian CLI (Jira and Confluence, official tap)
@@ -14,7 +14,7 @@ brew "apfel"                   # Apple Intelligence CLI + OpenAI-compatible API 
 brew "awscli"                  # AWS command-line interface
 brew "azure-cli"               # Azure command-line interface
 brew "gh"                      # GitHub CLI
-brew "git"
+brew "git"                     # distributed version control
 brew "glab"                    # GitLab CLI
 brew "jq"                      # JSON processor
 brew "nvm"                     # Node version manager
@@ -27,31 +27,31 @@ brew "terragrunt"              # thin wrapper that keeps terraform configuration
 brew "tmux"                    # terminal multiplexer (Claude Code teammate panes)
 
 # Applications (casks)
-cask "1password"          # password manager and secure vault
-cask "1password-cli"      # `op` — 1Password from the command line
-cask "antigravity-cli"    # Google's Antigravity — Gemini-powered agentic coding in the terminal
-cask "chatgpt-atlas"      # OpenAI's ChatGPT desktop browser
-cask "claude"             # Anthropic's Claude desktop app
-cask "claude-code"        # Anthropic's agentic coding tool for the terminal
-cask "clipy"              # clipboard-history manager
-cask "codex"              # OpenAI's command-line coding agent
-cask "codex-app"          # OpenAI's Codex desktop app
-cask "cursor"             # AI-first code editor (a Visual Studio Code fork)
-cask "dbeaver-community"  # DBeaver Community Edition — universal database client
-cask "discord"            # voice, video and text chat for communities
-cask "docker-desktop"     # builds, runs and manages Docker containers locally
-cask "dropbox"            # cloud file storage and sync
-cask "google-chrome"      # web browser
-cask "google-gemini"      # Google's Gemini desktop assistant
-cask "iterm2"             # feature-rich terminal emulator for macOS
-cask "microsoft-office"   # Word, Excel, PowerPoint, Outlook and OneNote
-cask "microsoft-teams"    # team chat, calls and meetings
-cask "mitmproxy"          # interactive HTTPS proxy CLI (`mitmproxy`, `mitmweb`, `mitmdump`)
-cask "opencode-desktop"   # opencode desktop client (model-agnostic AI coding agent)
-cask "postman"            # API client for building and testing HTTP requests
-cask "rectangle"          # window manager; snap and resize with keyboard shortcuts
-cask "slack"              # team messaging
-cask "spotify"            # music streaming
-cask "visual-studio-code" # extensible code editor
-cask "whatsapp"           # messaging desktop app
-cask "zoom"               # video conferencing
+cask "1password"               # password manager and secure vault
+cask "1password-cli"           # `op` — 1Password from the command line
+cask "antigravity-cli"         # Google's Antigravity — Gemini-powered agentic coding in the terminal
+cask "chatgpt-atlas"           # OpenAI's ChatGPT desktop browser
+cask "claude"                  # Anthropic's Claude desktop app
+cask "claude-code"             # Anthropic's agentic coding tool for the terminal
+cask "clipy"                   # clipboard-history manager
+cask "codex"                   # OpenAI's command-line coding agent
+cask "codex-app"               # OpenAI's Codex desktop app
+cask "cursor"                  # AI-first code editor (a Visual Studio Code fork)
+cask "dbeaver-community"       # DBeaver Community Edition — universal database client
+cask "discord"                 # voice, video and text chat for communities
+cask "docker-desktop"          # builds, runs and manages Docker containers locally
+cask "dropbox"                 # cloud file storage and sync
+cask "google-chrome"           # web browser
+cask "google-gemini"           # Google's Gemini desktop assistant
+cask "iterm2"                  # feature-rich terminal emulator for macOS
+cask "microsoft-office"        # Word, Excel, PowerPoint, Outlook and OneNote
+cask "microsoft-teams"         # team chat, calls and meetings
+cask "mitmproxy"               # interactive HTTPS proxy CLI (`mitmproxy`, `mitmweb`, `mitmdump`)
+cask "opencode-desktop"        # opencode desktop client (model-agnostic AI coding agent)
+cask "postman"                 # API client for building and testing HTTP requests
+cask "rectangle"               # window manager; snap and resize with keyboard shortcuts
+cask "slack"                   # team messaging
+cask "spotify"                 # music streaming
+cask "visual-studio-code"      # extensible code editor
+cask "whatsapp"                # messaging desktop app
+cask "zoom"                    # video conferencing

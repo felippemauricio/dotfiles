@@ -51,26 +51,24 @@ re-run `brew bundle`.
 
 ### ⌨️ Developer command-line tools
 
-- <img src="website/public/images/tools/atlassian.png" width="18" align="top" /> **[acli](https://developer.atlassian.com/cloud/acli/)** — Atlassian command-line interface: Jira and Confluence from the terminal. Installed from the official `atlassian/acli` tap.
-- <img src="website/public/images/tools/github.png" width="18" align="top" /> **[gh](https://cli.github.com/)** — GitHub from the terminal: pull requests, issues and repositories.
-- <img src="website/public/images/tools/git.png" width="18" align="top" /> **[git](https://git-scm.com/)** — distributed version control.
-- <img src="website/public/images/tools/gitlab.png" width="18" align="top" /> **[glab](https://gitlab.com/gitlab-org/cli)** — GitLab from the terminal: merge requests, issues and pipelines.
-- <img src="website/public/images/tools/jq.png" width="18" align="top" /> **[jq](https://jqlang.org/)** — command-line JSON processor for slicing, filtering and transforming JSON.
-- <img src="website/public/images/tools/mitmproxy.png" width="18" align="top" /> **[mitmproxy](https://mitmproxy.org/)** — interactive HTTPS proxy for inspecting and debugging HTTP(S) traffic (`mitmproxy`, `mitmweb` and `mitmdump`). Command-line tool, but installed as a Homebrew cask (its only distribution).
-- 🔍 **[ripgrep](https://github.com/BurntSushi/ripgrep)** — extremely fast recursive search (`rg`) that respects `.gitignore`.
-- <img src="website/public/images/tools/terraform.png" width="18" align="top" /> **[terraform](https://developer.hashicorp.com/terraform)** — infrastructure as code; provisions and manages cloud resources declaratively. Installed from the official `hashicorp/tap`.
-- <img src="website/public/images/tools/terragrunt.png" width="18" align="top" /> **[terragrunt](https://terragrunt.gruntwork.io/)** — thin wrapper around terraform that keeps configurations DRY across environments.
-- <img src="website/public/images/tools/tmux.png" width="18" align="top" /> **[tmux](https://github.com/tmux/tmux)** — terminal multiplexer: splits the terminal into panes and keeps sessions alive; powers the `claudio` command and the Claude Code agent-team split-pane workflow.
+- <img src="website/public/images/tools/atlassian.png" width="18" align="top" /> **[Atlassian CLI](https://developer.atlassian.com/cloud/acli/)** — Jira and Confluence from the terminal (`acli`). Installed from the official `atlassian/acli` tap.
+- <img src="website/public/images/tools/git.png" width="18" align="top" /> **[Git](https://git-scm.com/)** — distributed version control.
+- <img src="website/public/images/tools/github.png" width="18" align="top" /> **[GitHub CLI](https://cli.github.com/)** — GitHub from the terminal (`gh`): pull requests, issues and repositories.
+- <img src="website/public/images/tools/gitlab.png" width="18" align="top" /> **[GitLab CLI](https://gitlab.com/gitlab-org/cli)** — GitLab from the terminal (`glab`): merge requests, issues and pipelines.
+- <img src="website/public/images/tools/jq.png" width="18" align="top" /> **[Jq](https://jqlang.org/)** — command-line JSON processor for slicing, filtering and transforming JSON.
+- <img src="website/public/images/tools/mitmproxy.png" width="18" align="top" /> **[Mitmproxy](https://mitmproxy.org/)** — interactive HTTPS proxy for inspecting and debugging HTTP(S) traffic (`mitmproxy`, `mitmweb` and `mitmdump`). Command-line tool, but installed as a Homebrew cask (its only distribution).
+- 🔍 **[Ripgrep](https://github.com/BurntSushi/ripgrep)** — extremely fast recursive search (`rg`) that respects `.gitignore`.
+- <img src="website/public/images/tools/terraform.png" width="18" align="top" /> **[Terraform](https://developer.hashicorp.com/terraform)** — infrastructure as code; provisions and manages cloud resources declaratively. Installed from the official `hashicorp/tap`.
+- <img src="website/public/images/tools/terragrunt.png" width="18" align="top" /> **[Terragrunt](https://terragrunt.gruntwork.io/)** — thin wrapper around Terraform that keeps configurations DRY across environments.
+- <img src="website/public/images/tools/tmux.png" width="18" align="top" /> **[Tmux](https://github.com/tmux/tmux)** — terminal multiplexer: splits the terminal into panes and keeps sessions alive; powers the `claudio` command and the Claude Code agent-team split-pane workflow.
 
-#### ☁️ Cloud CLIs
+- **☁️ Cloud CLIs**
+  - <img src="website/public/images/tools/aws.png" width="18" align="top" /> **[AWS CLI](https://aws.amazon.com/cli/)** — Amazon Web Services command-line interface.
+  - <img src="website/public/images/tools/azure.png" width="18" align="top" /> **[Azure CLI](https://learn.microsoft.com/cli/azure/)** — Microsoft Azure command-line interface.
 
-- <img src="website/public/images/tools/aws.png" width="18" align="top" /> **[awscli](https://aws.amazon.com/cli/)** — Amazon Web Services command-line interface.
-- <img src="website/public/images/tools/azure.png" width="18" align="top" /> **[azure-cli](https://learn.microsoft.com/cli/azure/)** — Microsoft Azure command-line interface.
-
-#### 🔄 Version managers
-
-- <img src="website/public/images/tools/nodejs.png" width="18" align="top" /> **[nvm](https://github.com/nvm-sh/nvm)** — Node Version Manager; install and switch between Node.js versions.
-- <img src="website/public/images/tools/python.png" width="18" align="top" /> **[pyenv](https://github.com/pyenv/pyenv)** — Python version manager; install and switch between Python versions.
+- **🔄 Version managers**
+  - <img src="website/public/images/tools/nodejs.png" width="18" align="top" /> **[nvm](https://github.com/nvm-sh/nvm)** — Node Version Manager; install and switch between Node.js versions.
+  - <img src="website/public/images/tools/python.png" width="18" align="top" /> **[pyenv](https://github.com/pyenv/pyenv)** — Python version manager; install and switch between Python versions.
 
 ### 🐳 Developer tools
 
@@ -83,17 +81,22 @@ re-run `brew bundle`.
 
 ### 🤖 AI — models, assistants & coding agents
 
-- <img src="website/public/images/tools/antigravity.png" width="18" align="top" /> **[Antigravity CLI](https://antigravity.google/)** — Google's Gemini-powered agentic coding tool for the terminal.
-- 🍏 **[apfel](https://apfel.franzai.com)** — Apple Intelligence from the command line, with an OpenAI-compatible API server.
-- <img src="website/public/images/tools/openai.png" width="18" align="top" /> **[ChatGPT Atlas](https://openai.com/)** — OpenAI's ChatGPT desktop browser.
-- <img src="website/public/images/tools/claude-ai.png" width="18" align="top" /> **[Claude](https://claude.ai/)** — Anthropic's Claude desktop app.
-- <img src="website/public/images/tools/claude.png" width="18" align="top" /> **[Claude Code](https://claude.com/product/claude-code)** — Anthropic's agentic coding tool for the terminal.
-- <img src="website/public/images/tools/codex.png" width="18" align="top" /> **[Codex](https://github.com/openai/codex)** — OpenAI's command-line coding agent.
-- <img src="website/public/images/tools/codex.png" width="18" align="top" /> **[Codex app](https://openai.com/codex)** — OpenAI's Codex desktop app.
-- <img src="website/public/images/tools/gemini.png" width="18" align="top" /> **[Gemini](https://gemini.google/)** — Google's native Gemini desktop assistant.
-- 🦙 **[ollama](https://ollama.com/)** — runs open large language models locally (Llama, Gemma, Qwen and more), with an OpenAI-compatible API server. Start the background service with `brew services start ollama`.
-- <img src="website/public/images/tools/opencode.png" width="18" align="top" /> **[opencode](https://opencode.ai/)** — model-agnostic AI coding agent for the terminal (works with Claude, GPT, Gemini or local models). Installed from the `anomalyco/tap` tap.
-- <img src="website/public/images/tools/opencode.png" width="18" align="top" /> **[opencode desktop](https://opencode.ai/)** — the opencode desktop client.
+- **Local model runtimes**
+  - 🍏 **[apfel](https://apfel.franzai.com)** — Apple Intelligence from the command line, with an OpenAI-compatible API server.
+  - 🦙 **[ollama](https://ollama.com/)** — runs open large language models locally (Llama, Gemma, Qwen and more), with an OpenAI-compatible API server. Start the background service with `brew services start ollama`.
+
+- **Terminal coding agents**
+  - <img src="website/public/images/tools/antigravity.png" width="18" align="top" /> **[Antigravity CLI](https://antigravity.google/)** — Google's Gemini-powered agentic coding tool for the terminal.
+  - <img src="website/public/images/tools/claude.png" width="18" align="top" /> **[Claude Code](https://claude.com/product/claude-code)** — Anthropic's agentic coding tool for the terminal.
+  - <img src="website/public/images/tools/codex.png" width="18" align="top" /> **[Codex](https://github.com/openai/codex)** — OpenAI's command-line coding agent.
+  - <img src="website/public/images/tools/opencode.png" width="18" align="top" /> **[Opencode](https://opencode.ai/)** — model-agnostic AI coding agent for the terminal (works with Claude, GPT, Gemini or local models). Installed from the `anomalyco/tap` tap.
+
+- **Desktop apps**
+  - <img src="website/public/images/tools/openai.png" width="18" align="top" /> **[ChatGPT Atlas](https://openai.com/)** — OpenAI's ChatGPT desktop browser.
+  - <img src="website/public/images/tools/claude-ai.png" width="18" align="top" /> **[Claude](https://claude.ai/)** — Anthropic's Claude desktop app.
+  - <img src="website/public/images/tools/codex.png" width="18" align="top" /> **[Codex app](https://openai.com/codex)** — OpenAI's Codex desktop app.
+  - <img src="website/public/images/tools/gemini.png" width="18" align="top" /> **[Gemini](https://gemini.google/)** — Google's native Gemini desktop assistant.
+  - <img src="website/public/images/tools/opencode.png" width="18" align="top" /> **[Opencode desktop](https://opencode.ai/)** — the opencode desktop client.
 
 ### 🐚 Shell — Oh My Zsh
 
