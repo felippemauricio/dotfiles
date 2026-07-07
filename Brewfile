@@ -4,6 +4,7 @@
 # Keep each section in alphabetical order (formulae by tool name).
 
 # Taps (third-party formula repositories)
+tap "anomalyco/tap"
 tap "atlassian/acli"
 tap "hashicorp/tap"
 
@@ -18,6 +19,7 @@ brew "glab"                    # GitLab CLI
 brew "jq"                      # JSON processor
 brew "nvm"                     # Node version manager
 brew "ollama"                  # run large language models locally (OpenAI-compatible API)
+brew "anomalyco/tap/opencode"  # opencode — model-agnostic AI coding agent for the terminal
 brew "pyenv"                   # Python version manager
 brew "ripgrep"                 # fast recursive search
 brew "hashicorp/tap/terraform" # infrastructure as code (official HashiCorp tap)
@@ -27,6 +29,7 @@ brew "tmux"                    # terminal multiplexer (Claude Code teammate pane
 # Applications (casks)
 cask "1password"          # password manager and secure vault
 cask "1password-cli"      # `op` — 1Password from the command line
+cask "antigravity-cli"    # Google's Antigravity — Gemini-powered agentic coding in the terminal
 cask "chatgpt-atlas"      # OpenAI's ChatGPT desktop browser
 cask "claude"             # Anthropic's Claude desktop app
 cask "claude-code"        # Anthropic's agentic coding tool for the terminal
@@ -39,10 +42,12 @@ cask "discord"            # voice, video and text chat for communities
 cask "docker-desktop"     # builds, runs and manages Docker containers locally
 cask "dropbox"            # cloud file storage and sync
 cask "google-chrome"      # web browser
+cask "google-gemini"      # Google's Gemini desktop assistant
 cask "iterm2"             # feature-rich terminal emulator for macOS
 cask "microsoft-office"   # Word, Excel, PowerPoint, Outlook and OneNote
 cask "microsoft-teams"    # team chat, calls and meetings
 cask "mitmproxy"          # interactive HTTPS proxy CLI (`mitmproxy`, `mitmweb`, `mitmdump`)
+cask "opencode-desktop"   # opencode desktop client (model-agnostic AI coding agent)
 cask "postman"            # API client for building and testing HTTP requests
 cask "rectangle"          # window manager; snap and resize with keyboard shortcuts
 cask "slack"              # team messaging

@@ -81,18 +81,19 @@ re-run `brew bundle`.
 - <img src="website/public/images/tools/postman.png" width="18" align="top" /> **[Postman](https://www.postman.com/)** — API client for building and testing HTTP requests.
 - <img src="website/public/images/tools/vscode.png" width="18" align="top" /> **[Visual Studio Code](https://code.visualstudio.com/)** — extensible code editor.
 
-### 🧠 AI & machine learning
+### 🤖 AI — models, assistants & coding agents
 
+- <img src="website/public/images/tools/antigravity.png" width="18" align="top" /> **[Antigravity CLI](https://antigravity.google/)** — Google's Gemini-powered agentic coding tool for the terminal.
 - 🍏 **[apfel](https://apfel.franzai.com)** — Apple Intelligence from the command line, with an OpenAI-compatible API server.
-- 🦙 **[ollama](https://ollama.com/)** — runs open large language models locally (Llama, Gemma, Qwen and more), with an OpenAI-compatible API server. Start the background service with `brew services start ollama`.
-
-### 🤖 AI assistants & coding agents
-
 - <img src="website/public/images/tools/openai.png" width="18" align="top" /> **[ChatGPT Atlas](https://openai.com/)** — OpenAI's ChatGPT desktop browser.
 - <img src="website/public/images/tools/claude-ai.png" width="18" align="top" /> **[Claude](https://claude.ai/)** — Anthropic's Claude desktop app.
 - <img src="website/public/images/tools/claude.png" width="18" align="top" /> **[Claude Code](https://claude.com/product/claude-code)** — Anthropic's agentic coding tool for the terminal.
 - <img src="website/public/images/tools/codex.png" width="18" align="top" /> **[Codex](https://github.com/openai/codex)** — OpenAI's command-line coding agent.
 - <img src="website/public/images/tools/codex.png" width="18" align="top" /> **[Codex app](https://openai.com/codex)** — OpenAI's Codex desktop app.
+- <img src="website/public/images/tools/gemini.png" width="18" align="top" /> **[Gemini](https://gemini.google/)** — Google's native Gemini desktop assistant.
+- 🦙 **[ollama](https://ollama.com/)** — runs open large language models locally (Llama, Gemma, Qwen and more), with an OpenAI-compatible API server. Start the background service with `brew services start ollama`.
+- <img src="website/public/images/tools/opencode.png" width="18" align="top" /> **[opencode](https://opencode.ai/)** — model-agnostic AI coding agent for the terminal (works with Claude, GPT, Gemini or local models). Installed from the `anomalyco/tap` tap.
+- <img src="website/public/images/tools/opencode.png" width="18" align="top" /> **[opencode desktop](https://opencode.ai/)** — the opencode desktop client.
 
 ### 🐚 Shell — Oh My Zsh
 
