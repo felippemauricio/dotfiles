@@ -48,3 +48,28 @@ cd ~/Workspace
 
 # Muscle memory from the_silver_searcher (unmaintained) — ripgrep replaces it.
 alias ag='rg'
+
+# ===================================================================================
+
+# Claude Code inside tmux with one command. Bare `claudio` starts a FRESH,
+# isolated tmux session for the current directory every time (`claude-<dir>-N`),
+# so several in the same folder never share a view. `claudio <name>` opens (or
+# reattaches to) a named session instead. Inside a tmux session it just runs claude.
+
+claudio() {
+  if [ -n "${TMUX-}" ]; then
+    claude "$@"
+    return
+  fi
+  local dir_slug="${${PWD:t}//[^a-zA-Z0-9-]/-}"
+  if [ $# -gt 0 ]; then
+    local name="claude-$1"; shift
+    tmux new-session -A -s "$name" -c "$PWD" claude "$@"
+  else
+    local n=1
+    while tmux has-session -t "claude-${dir_slug}-${n}" 2>/dev/null; do
+      n=$((n + 1))
+    done
+    tmux new-session -s "claude-${dir_slug}-${n}" -c "$PWD" claude
+  fi
+}
