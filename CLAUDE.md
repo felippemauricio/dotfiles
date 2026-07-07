@@ -36,7 +36,24 @@ dotfiles/
   an incomplete change — sweep all three before opening the PR.
 - **Keep every list alphabetical.** The `Brewfile` sections (formulae sorted by
   tool name, ignoring a tap prefix), and the tool lists in the `README` and on
-  the website, stay in alphabetical order within each section or category.
+  the website (sorted by the **display name** below), stay in alphabetical order
+  within each section or category.
+- **Every `Brewfile` line carries an aligned comment.** Each `tap`/`brew`/`cask`
+  line has a trailing `# comment`, and every comment aligns to one shared column
+  across the whole file (formulae and casks together) — so the `#` line up even
+  though `brew "…"` and `cask "…"` differ in length. No line is left bare (`git`
+  and the taps get one too).
+- **Doc display names: official product name, one case per section.** In the
+  `README` and website, name each tool by its official product name — `AWS CLI`,
+  `Azure CLI`, `GitHub CLI`, `GitLab CLI`, `Atlassian CLI`, `Git`, `Terraform`,
+  `Docker Desktop` — not the raw formula/cask/command name (`awscli`, `gh`,
+  `docker-desktop`). **Within each section the display names share one case:**
+  either all lowercase or all first-letter-uppercase — never mixed. A section
+  that mixes proper-noun products with lowercase-branded tools goes
+  first-letter-uppercase throughout (`jq`→`Jq`, `tmux`→`Tmux`,
+  `opencode`→`Opencode`); a section whose tools are all lowercase (model
+  runtimes, version managers) stays lowercase. The `Brewfile` keeps the real
+  package names; only the docs use display names.
 - **The website must actually ship.** The docs site (`website/`) deploys to
   <https://felippemauricio.github.io/dotfiles/> via the "Deploy docs to Pages"
   workflow (`.github/workflows/pages.yml`) on every push to `master`. A change
