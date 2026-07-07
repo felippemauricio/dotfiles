@@ -10,21 +10,25 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 
-# Automatically switch to the version in .nvmrc when entering a directory
-autoload -U add-zsh-hook
-load-nvmrc() {
-  if [[ -f .nvmrc && -r .nvmrc ]]; then
-    nvm use
-  elif [[ $(nvm version) != $(nvm version default) ]]; then
-    local default_version=$(nvm version default 2>/dev/null)
-    if [[ "$default_version" != "N/A" ]]; then
-      echo "Reverting to nvm default version"
-      nvm use default
+# Automatically switch to the version in .nvmrc when entering a directory.
+# Guarded for zsh: `scripts/languages.sh` sources this file under bash to load
+# nvm/pyenv, and `autoload`/`add-zsh-hook` are zsh builtins that error there.
+if [ -n "$ZSH_VERSION" ]; then
+  autoload -U add-zsh-hook
+  load-nvmrc() {
+    if [[ -f .nvmrc && -r .nvmrc ]]; then
+      nvm use
+    elif [[ $(nvm version) != $(nvm version default) ]]; then
+      local default_version=$(nvm version default 2>/dev/null)
+      if [[ "$default_version" != "N/A" ]]; then
+        echo "Reverting to nvm default version"
+        nvm use default
+      fi
     fi
-  fi
-}
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
+  }
+  add-zsh-hook chpwd load-nvmrc
+  load-nvmrc
+fi
 
 # ===================================================================================
 
