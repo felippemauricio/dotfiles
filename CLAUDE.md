@@ -20,8 +20,9 @@ dotfiles/
 └── scripts/
     ├── homebrew.sh    # installs Homebrew, then `brew bundle`
     ├── oh-my-zsh.sh   # installs the Xcode CLI tools and Oh My Zsh
-    ├── shell.sh       # installs the zsh config and sources it from ~/.zshrc
+    ├── shell.sh       # installs the zsh + tmux configs into the home directory
     ├── zshrc          # the zsh config (nvm + pyenv); copied to ~/.dotfiles.zsh
+    ├── tmux.conf      # the tmux config (mouse + scrollback); copied to ~/.tmux.conf
     └── languages.sh   # installs Node (nvm) and Python (pyenv)
 ```
 

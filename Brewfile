@@ -22,6 +22,7 @@ brew "pyenv"                   # Python version manager
 brew "ripgrep"                 # fast recursive search
 brew "hashicorp/tap/terraform" # infrastructure as code (official HashiCorp tap)
 brew "terragrunt"              # thin wrapper that keeps terraform configurations DRY
+brew "tmux"                    # terminal multiplexer (Claude Code teammate panes)
 
 # Applications (casks)
 cask "1password"          # password manager and secure vault

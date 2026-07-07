@@ -31,12 +31,12 @@ Then restart your terminal.
 `install.sh` runs each step below in order. Every script is `set -euo pipefail`
 and is also runnable on its own.
 
-| Step | Script                 | What it does                                                                |
-| ---- | ---------------------- | --------------------------------------------------------------------------- |
-| 1    | `scripts/homebrew.sh`  | Installs Homebrew (if missing), then installs everything in the `Brewfile`. |
-| 2    | `scripts/oh-my-zsh.sh` | Triggers the Xcode command-line tools install and installs Oh My Zsh.       |
-| 3    | `scripts/shell.sh`     | Copies the zsh config to `~/.dotfiles.zsh` and sources it from `~/.zshrc`.  |
-| 4    | `scripts/languages.sh` | Installs Node (latest LTS via nvm) and Python (latest stable via pyenv).    |
+| Step | Script                 | What it does                                                                                                |
+| ---- | ---------------------- | ----------------------------------------------------------------------------------------------------------- |
+| 1    | `scripts/homebrew.sh`  | Installs Homebrew (if missing), then installs everything in the `Brewfile`.                                 |
+| 2    | `scripts/oh-my-zsh.sh` | Triggers the Xcode command-line tools install and installs Oh My Zsh.                                       |
+| 3    | `scripts/shell.sh`     | Copies the zsh config to `~/.dotfiles.zsh` (sourced from `~/.zshrc`) and the tmux config to `~/.tmux.conf`. |
+| 4    | `scripts/languages.sh` | Installs Node (latest LTS via nvm) and Python (latest stable via pyenv).                                    |
 
 ## What gets installed
 
@@ -60,6 +60,7 @@ re-run `brew bundle`.
 - 🔍 **[ripgrep](https://github.com/BurntSushi/ripgrep)** — extremely fast recursive search (`rg`) that respects `.gitignore`.
 - <img src="website/public/images/tools/terraform.png" width="18" align="top" /> **[terraform](https://developer.hashicorp.com/terraform)** — infrastructure as code; provisions and manages cloud resources declaratively. Installed from the official `hashicorp/tap`.
 - <img src="website/public/images/tools/terragrunt.png" width="18" align="top" /> **[terragrunt](https://terragrunt.gruntwork.io/)** — thin wrapper around terraform that keeps configurations DRY across environments.
+- <img src="website/public/images/tools/tmux.png" width="18" align="top" /> **[tmux](https://github.com/tmux/tmux)** — terminal multiplexer: splits the terminal into panes and keeps sessions alive; powers the `claudio` command and the Claude Code agent-team split-pane workflow.
 
 #### ☁️ Cloud CLIs
 
@@ -124,15 +125,19 @@ re-run `brew bundle`.
 
 ## Shell configuration
 
-`scripts/shell.sh` installs the zsh config as `~/.dotfiles.zsh` and sources it
-from `~/.zshrc`. On every new shell it:
+`scripts/shell.sh` installs the zsh config as `~/.dotfiles.zsh` (sourced from
+`~/.zshrc`) and the tmux config as `~/.tmux.conf` (mouse on, plus a large
+scrollback so you can scroll far up to re-read output). On every new shell it:
 
 - loads Homebrew into the environment (Apple Silicon `/opt/homebrew` prefix);
 - initialises **nvm** and automatically switches to the Node version in a
   project's `.nvmrc` when you `cd` into it (reverting to the default otherwise);
 - initialises **pyenv**;
 - defines the `ag` alias for **ripgrep** (`rg`) — muscle memory from
-  the_silver_searcher; and
+  the_silver_searcher;
+- defines the `claudio` command, which launches Claude Code inside a fresh
+  **tmux** session each time (so agent-team teammates open in side-by-side panes,
+  and several sessions in the same folder stay isolated); and
 - opens your `~/Workspace` directory.
 
 ## Version managers

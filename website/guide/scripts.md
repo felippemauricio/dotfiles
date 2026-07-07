@@ -16,9 +16,11 @@ not change your shell or launch a nested zsh.
 
 ## `scripts/shell.sh`
 
-Copies `scripts/zshrc` to `~/.dotfiles.zsh` and sources it from `~/.zshrc` (once).
-The config sets up Homebrew, nvm and pyenv, defines the `ag` alias for ripgrep
-(`rg`), and opens your `~/Workspace` folder on a new shell.
+Copies `scripts/zshrc` to `~/.dotfiles.zsh` (sourced from `~/.zshrc`, once) and
+`scripts/tmux.conf` to `~/.tmux.conf` (mouse on, plus a large scrollback buffer).
+The zsh config sets up Homebrew, nvm and pyenv, defines the `ag` alias for ripgrep
+(`rg`) and the `claudio` command (launches Claude Code inside a tmux session for
+agent-team split panes), and opens your `~/Workspace` folder on a new shell.
 
 ## `scripts/languages.sh`
 
