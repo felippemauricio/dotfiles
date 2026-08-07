@@ -13,6 +13,7 @@ brew "atlassian/acli/acli"     # Atlassian CLI (Jira and Confluence, official ta
 brew "apfel"                   # Apple Intelligence CLI + OpenAI-compatible API server
 brew "awscli"                  # AWS command-line interface
 brew "azure-cli"               # Azure command-line interface
+brew "codeburn"                # AI coding token usage, by task, tool, model and project
 brew "gh"                      # GitHub CLI
 brew "git"                     # distributed version control
 brew "glab"                    # GitLab CLI
@@ -30,7 +31,7 @@ brew "tmux"                    # terminal multiplexer (Claude Code teammate pane
 cask "1password"               # password manager and secure vault
 cask "1password-cli"           # `op` — 1Password from the command line
 cask "antigravity-cli"         # Google's Antigravity — Gemini-powered agentic coding in the terminal
-cask "chatgpt-atlas"           # OpenAI's ChatGPT desktop browser
+cask "chatgpt"                 # OpenAI's ChatGPT desktop app
 cask "claude"                  # Anthropic's Claude desktop app
 cask "claude-code"             # Anthropic's agentic coding tool for the terminal
 cask "clipy"                   # clipboard-history manager
@@ -44,6 +45,7 @@ cask "dropbox"                 # cloud file storage and sync
 cask "google-chrome"           # web browser
 cask "google-gemini"           # Google's Gemini desktop assistant
 cask "iterm2"                  # feature-rich terminal emulator for macOS
+cask "libreoffice"             # free office suite: Writer, Calc, Impress and Draw
 cask "microsoft-office"        # Word, Excel, PowerPoint, Outlook and OneNote
 cask "microsoft-teams"         # team chat, calls and meetings
 cask "mitmproxy"               # interactive HTTPS proxy CLI (`mitmproxy`, `mitmweb`, `mitmdump`)

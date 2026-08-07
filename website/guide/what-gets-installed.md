@@ -50,7 +50,7 @@ Installed as Homebrew **casks**.
 
 ## 🤖 AI — models, assistants & coding agents
 
-A mix of Homebrew **formulae** (apfel, ollama, opencode) and **casks** (the rest).
+A mix of Homebrew **formulae** (apfel, codeburn, ollama, opencode) and **casks** (the rest).
 
 - **Local model runtimes**
   - **[apfel](https://apfel.franzai.com)** 🍏 — Apple Intelligence from the command line, with an OpenAI-compatible API server.
@@ -63,11 +63,14 @@ A mix of Homebrew **formulae** (apfel, ollama, opencode) and **casks** (the rest
   - **[Opencode](https://opencode.ai/)** <img src="/images/tools/opencode.png" width="18" align="top" /> — model-agnostic AI coding agent for the terminal (works with Claude, GPT, Gemini or local models). Installed from the `anomalyco/tap` tap.
 
 - **Desktop apps**
-  - **[ChatGPT Atlas](https://openai.com/)** <img src="/images/tools/openai.png" width="18" align="top" /> — OpenAI's ChatGPT desktop browser.
+  - **[ChatGPT](https://chatgpt.com/)** <img src="/images/tools/openai.png" width="18" align="top" /> — OpenAI's ChatGPT desktop app.
   - **[Claude](https://claude.ai/)** <img src="/images/tools/claude-ai.png" width="18" align="top" /> — Anthropic's Claude desktop app.
   - **[Codex app](https://openai.com/codex)** <img src="/images/tools/codex.png" width="18" align="top" /> — OpenAI's Codex desktop app.
   - **[Gemini](https://gemini.google/)** <img src="/images/tools/gemini.png" width="18" align="top" /> — Google's native Gemini desktop assistant.
   - **[Opencode desktop](https://opencode.ai/)** <img src="/images/tools/opencode.png" width="18" align="top" /> — the opencode desktop client.
+
+- **Usage & analytics**
+  - **[Codeburn](https://codeburn.app/)** <img src="/images/tools/codeburn.png" width="18" align="top" /> — shows where your AI coding tokens go, broken down by task, tool, model and project.
 
 ## 🐚 Shell — Oh My Zsh
 
@@ -98,6 +101,7 @@ Installed as Homebrew **casks**.
 - **[1Password CLI](https://developer.1password.com/docs/cli/)** <img src="/images/tools/1password.png" width="18" align="top" /> — `op`, 1Password from the command line; injects secrets into scripts and tools (pairs with the desktop app's CLI integration).
 - **[Clipy](https://clipy-app.com/)** <img src="/images/tools/clipy.png" width="18" align="top" /> — lightweight clipboard-history manager.
 - **[Dropbox](https://www.dropbox.com/)** <img src="/images/tools/dropbox.png" width="18" align="top" /> — cloud file storage and sync.
+- **[LibreOffice](https://www.libreoffice.org/)** <img src="/images/tools/libreoffice.png" width="18" align="top" /> — free, open-source office suite: Writer, Calc, Impress and Draw.
 - **[Microsoft Office](https://www.microsoft.com/microsoft-365)** <img src="/images/tools/microsoft.png" width="18" align="top" /> — office suite: Word, Excel, PowerPoint, Outlook and OneNote.
 - **[Rectangle](https://rectangleapp.com/)** <img src="/images/tools/rectangle.png" width="18" align="top" /> — window manager; snap and resize windows with keyboard shortcuts.
 
