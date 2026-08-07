@@ -86,7 +86,6 @@ re-run `brew bundle`.
   - 🦙 **[ollama](https://ollama.com/)** — runs open large language models locally (Llama, Gemma, Qwen and more), with an OpenAI-compatible API server. Start the background service with `brew services start ollama`.
 
 - **Terminal coding agents**
-  - <img src="website/public/images/tools/antigravity.png" width="18" align="top" /> **[Antigravity CLI](https://antigravity.google/)** — Google's Gemini-powered agentic coding tool for the terminal.
   - <img src="website/public/images/tools/claude.png" width="18" align="top" /> **[Claude Code](https://claude.com/product/claude-code)** — Anthropic's agentic coding tool for the terminal.
   - <img src="website/public/images/tools/codex.png" width="18" align="top" /> **[Codex](https://github.com/openai/codex)** — OpenAI's command-line coding agent.
   - <img src="website/public/images/tools/opencode.png" width="18" align="top" /> **[Opencode](https://opencode.ai/)** — model-agnostic AI coding agent for the terminal (works with Claude, GPT, Gemini or local models). Installed from the `anomalyco/tap` tap.
@@ -95,7 +94,6 @@ re-run `brew bundle`.
   - <img src="website/public/images/tools/openai.png" width="18" align="top" /> **[ChatGPT](https://chatgpt.com/)** — OpenAI's ChatGPT desktop app.
   - <img src="website/public/images/tools/claude-ai.png" width="18" align="top" /> **[Claude](https://claude.ai/)** — Anthropic's Claude desktop app.
   - <img src="website/public/images/tools/codex.png" width="18" align="top" /> **[Codex app](https://openai.com/codex)** — OpenAI's Codex desktop app.
-  - <img src="website/public/images/tools/gemini.png" width="18" align="top" /> **[Gemini](https://gemini.google/)** — Google's native Gemini desktop assistant.
   - <img src="website/public/images/tools/opencode.png" width="18" align="top" /> **[Opencode desktop](https://opencode.ai/)** — the opencode desktop client.
 
 - **Usage & analytics**

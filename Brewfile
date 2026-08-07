@@ -30,7 +30,6 @@ brew "tmux"                    # terminal multiplexer (Claude Code teammate pane
 # Applications (casks)
 cask "1password"               # password manager and secure vault
 cask "1password-cli"           # `op` — 1Password from the command line
-cask "antigravity-cli"         # Google's Antigravity — Gemini-powered agentic coding in the terminal
 cask "chatgpt"                 # OpenAI's ChatGPT desktop app
 cask "claude"                  # Anthropic's Claude desktop app
 cask "claude-code"             # Anthropic's agentic coding tool for the terminal
@@ -43,7 +42,6 @@ cask "discord"                 # voice, video and text chat for communities
 cask "docker-desktop"          # builds, runs and manages Docker containers locally
 cask "dropbox"                 # cloud file storage and sync
 cask "google-chrome"           # web browser
-cask "google-gemini"           # Google's Gemini desktop assistant
 cask "iterm2"                  # feature-rich terminal emulator for macOS
 cask "libreoffice"             # free office suite: Writer, Calc, Impress and Draw
 cask "microsoft-office"        # Word, Excel, PowerPoint, Outlook and OneNote
