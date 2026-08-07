@@ -92,11 +92,14 @@ re-run `brew bundle`.
   - <img src="website/public/images/tools/opencode.png" width="18" align="top" /> **[Opencode](https://opencode.ai/)** — model-agnostic AI coding agent for the terminal (works with Claude, GPT, Gemini or local models). Installed from the `anomalyco/tap` tap.
 
 - **Desktop apps**
-  - <img src="website/public/images/tools/openai.png" width="18" align="top" /> **[ChatGPT Atlas](https://openai.com/)** — OpenAI's ChatGPT desktop browser.
+  - <img src="website/public/images/tools/openai.png" width="18" align="top" /> **[ChatGPT](https://chatgpt.com/)** — OpenAI's ChatGPT desktop app.
   - <img src="website/public/images/tools/claude-ai.png" width="18" align="top" /> **[Claude](https://claude.ai/)** — Anthropic's Claude desktop app.
   - <img src="website/public/images/tools/codex.png" width="18" align="top" /> **[Codex app](https://openai.com/codex)** — OpenAI's Codex desktop app.
   - <img src="website/public/images/tools/gemini.png" width="18" align="top" /> **[Gemini](https://gemini.google/)** — Google's native Gemini desktop assistant.
   - <img src="website/public/images/tools/opencode.png" width="18" align="top" /> **[Opencode desktop](https://opencode.ai/)** — the opencode desktop client.
+
+- **Usage & analytics**
+  - <img src="website/public/images/tools/codeburn.png" width="18" align="top" /> **[Codeburn](https://codeburn.app/)** — shows where your AI coding tokens go, broken down by task, tool, model and project.
 
 ### 🐚 Shell — Oh My Zsh
 
@@ -120,6 +123,7 @@ re-run `brew bundle`.
 - <img src="website/public/images/tools/1password.png" width="18" align="top" /> **[1Password CLI](https://developer.1password.com/docs/cli/)** — `op`, 1Password from the command line; injects secrets into scripts and tools (pairs with the desktop app's CLI integration).
 - <img src="website/public/images/tools/clipy.png" width="18" align="top" /> **[Clipy](https://clipy-app.com/)** — lightweight clipboard-history manager.
 - <img src="website/public/images/tools/dropbox.png" width="18" align="top" /> **[Dropbox](https://www.dropbox.com/)** — cloud file storage and sync.
+- <img src="website/public/images/tools/libreoffice.png" width="18" align="top" /> **[LibreOffice](https://www.libreoffice.org/)** — free, open-source office suite: Writer, Calc, Impress and Draw.
 - <img src="website/public/images/tools/microsoft.png" width="18" align="top" /> **[Microsoft Office](https://www.microsoft.com/microsoft-365)** — office suite: Word, Excel, PowerPoint, Outlook and OneNote.
 - <img src="website/public/images/tools/rectangle.png" width="18" align="top" /> **[Rectangle](https://rectangleapp.com/)** — window manager; snap and resize windows with keyboard shortcuts.
 
