@@ -6,9 +6,17 @@ It is applied by `scripts/homebrew.sh` with `brew bundle`.
 ## Syntax
 
 ```ruby
-brew "git"            # a command-line formula
-cask "google-chrome"  # a GUI application
+tap "hashicorp/tap"             # a third-party formula repository
+brew "git"                      # a command-line formula
+brew "hashicorp/tap/terraform"  # a formula from a tap
+cask "google-chrome"            # a GUI application
 ```
+
+`scripts/homebrew.sh` taps and trusts every `tap` line before running
+`brew bundle`, so adding a tap needs no script change.
+
+Keep each section in alphabetical order and give every line a trailing comment
+aligned to one shared column — `npm test` checks both.
 
 ## Add a package
 

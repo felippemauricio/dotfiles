@@ -11,7 +11,9 @@
     "lint": "eslint .",
     "test": "vitest run",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "lint:sh": "shellcheck install.sh scripts/*.sh",
+    "check": "npm run lint && npm run lint:sh && npm run format:check && npm run test && npm run docs:build"
   },
   "repository": {
     "type": "git",

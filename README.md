@@ -33,14 +33,14 @@ and is also runnable on its own.
 
 | Step | Script                 | What it does                                                                                                |
 | ---- | ---------------------- | ----------------------------------------------------------------------------------------------------------- |
-| 1    | `scripts/homebrew.sh`  | Installs Homebrew (if missing), then installs everything in the `Brewfile`.                                 |
+| 1    | `scripts/homebrew.sh`  | Installs Homebrew (if missing), trusts the `Brewfile`'s taps, then installs everything in the `Brewfile`.   |
 | 2    | `scripts/oh-my-zsh.sh` | Triggers the Xcode command-line tools install and installs Oh My Zsh.                                       |
 | 3    | `scripts/shell.sh`     | Copies the zsh config to `~/.dotfiles.zsh` (sourced from `~/.zshrc`) and the tmux config to `~/.tmux.conf`. |
 | 4    | `scripts/languages.sh` | Installs Node (latest LTS via nvm) and Python (latest stable via pyenv).                                    |
 
 ## What gets installed
 
-Everything except Homebrew and Oh My Zsh is declared in the [`Brewfile`](Brewfile)
+Every package except Homebrew and Oh My Zsh is declared in the [`Brewfile`](Brewfile)
 and applied with `brew bundle` — formulae (`brew`) are command-line tools, casks
 (`cask`) are GUI applications. To add or remove a package, edit that file and
 re-run `brew bundle`.
@@ -58,6 +58,7 @@ re-run `brew bundle`.
 - <img src="website/public/images/tools/jq.png" width="18" align="top" /> **[Jq](https://jqlang.org/)** — command-line JSON processor for slicing, filtering and transforming JSON.
 - <img src="website/public/images/tools/mitmproxy.png" width="18" align="top" /> **[Mitmproxy](https://mitmproxy.org/)** — interactive HTTPS proxy for inspecting and debugging HTTP(S) traffic (`mitmproxy`, `mitmweb` and `mitmdump`). Command-line tool, but installed as a Homebrew cask (its only distribution).
 - 🔍 **[Ripgrep](https://github.com/BurntSushi/ripgrep)** — extremely fast recursive search (`rg`) that respects `.gitignore`.
+- 🐚 **[ShellCheck](https://www.shellcheck.net/)** — static analysis for shell scripts; `npm run check` uses it to lint `install.sh` and `scripts/*.sh`.
 - <img src="website/public/images/tools/terraform.png" width="18" align="top" /> **[Terraform](https://developer.hashicorp.com/terraform)** — infrastructure as code; provisions and manages cloud resources declaratively. Installed from the official `hashicorp/tap`.
 - <img src="website/public/images/tools/terragrunt.png" width="18" align="top" /> **[Terragrunt](https://terragrunt.gruntwork.io/)** — thin wrapper around Terraform that keeps configurations DRY across environments.
 - <img src="website/public/images/tools/tmux.png" width="18" align="top" /> **[Tmux](https://github.com/tmux/tmux)** — terminal multiplexer: splits the terminal into panes and keeps sessions alive; powers the `claudio` command and the Claude Code agent-team split-pane workflow.
@@ -78,6 +79,17 @@ re-run `brew bundle`.
 - <img src="website/public/images/tools/iterm2.png" width="18" align="top" /> **[iTerm2](https://iterm2.com/)** — feature-rich terminal emulator for macOS.
 - <img src="website/public/images/tools/postman.png" width="18" align="top" /> **[Postman](https://www.postman.com/)** — API client for building and testing HTTP requests.
 - <img src="website/public/images/tools/vscode.png" width="18" align="top" /> **[Visual Studio Code](https://code.visualstudio.com/)** — extensible code editor.
+
+### 📱 Mobile development
+
+The toolchain for building and testing React Native / Expo apps on iOS and Android.
+
+- 🤖 **[Android Studio](https://developer.android.com/studio)** — Android IDE, SDK manager and emulators (cask).
+- 🔄 **[Bitrise CLI](https://github.com/bitrise-io/bitrise)** — runs Bitrise CI workflows locally (`bitrise`).
+- 📦 **[CocoaPods](https://cocoapods.org/)** — dependency manager for iOS (Cocoa) projects (`pod`).
+- 🎭 **[Maestro](https://maestro.dev/)** — mobile UI test automation for iOS simulators and Android emulators. Installed from the official `mobile-dev-inc/tap` tap.
+- 👀 **[Watchman](https://facebook.github.io/watchman/)** — file watcher used by React Native and the Metro bundler.
+- ☕ **[Zulu JDK 17](https://www.azul.com/downloads/?package=jdk)** — Azul's OpenJDK 17 build, the Java version Android builds need (cask `zulu@17`).
 
 ### 🤖 AI — models, assistants & coding agents
 
@@ -144,7 +156,7 @@ scrollback so you can scroll far up to re-read output). On every new shell it:
 - defines the `claudio` command, which launches Claude Code inside a fresh
   **tmux** session each time (so agent-team teammates open in side-by-side panes,
   and several sessions in the same folder stay isolated); and
-- opens your `~/Workspace` directory.
+- opens your `~/Workspace` directory (when it exists).
 
 ## Version managers
 
@@ -163,6 +175,18 @@ published to GitHub Pages on every push to `master`:
 - **Guide** — getting started, installation, the scripts, the version managers,
   and what gets installed.
 - **Reference** — the annotated `Brewfile`.
+
+## Development
+
+The docs site and the repository checks run on Node (see `package.json`):
+
+```sh
+npm ci
+npm run check   # ESLint, Prettier, ShellCheck, Vitest and a docs build
+```
+
+CI (`.github/workflows/ci.yml`) runs `npm run check` on every push and pull
+request; the Pages workflow deploys the site on every push to `master`.
 
 ## Licence
 

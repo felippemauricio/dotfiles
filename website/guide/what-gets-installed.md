@@ -5,7 +5,7 @@ package manager, a set of **command-line tools**, the **Oh My Zsh** shell
 framework and config, a curated set of **desktop applications**, and the **Node**
 and **Python** toolchains.
 
-Everything except Homebrew and Oh My Zsh (which the install scripts bootstrap
+Every package except Homebrew and Oh My Zsh (which the install scripts bootstrap
 first) is declared in the [`Brewfile`](/reference/brewfile) and applied with
 `brew bundle`. To add or remove a package, edit that file and re-run
 `brew bundle`.
@@ -25,6 +25,7 @@ Installed as Homebrew **formulae**.
 - **[Jq](https://jqlang.org/)** <img src="/images/tools/jq.png" width="18" align="top" /> — command-line JSON processor for slicing, filtering and transforming JSON.
 - **[Mitmproxy](https://mitmproxy.org/)** <img src="/images/tools/mitmproxy.png" width="18" align="top" /> — interactive HTTPS proxy for inspecting and debugging HTTP(S) traffic (`mitmproxy`, `mitmweb` and `mitmdump`). Command-line tool, but installed as a Homebrew cask (its only distribution).
 - **[Ripgrep](https://github.com/BurntSushi/ripgrep)** 🔍 — extremely fast recursive search (`rg`) that respects `.gitignore`.
+- **[ShellCheck](https://www.shellcheck.net/)** 🐚 — static analysis for shell scripts; `npm run check` uses it to lint `install.sh` and `scripts/*.sh`.
 - **[Terraform](https://developer.hashicorp.com/terraform)** <img src="/images/tools/terraform.png" width="18" align="top" /> — infrastructure as code; provisions and manages cloud resources declaratively. Installed from the official `hashicorp/tap`.
 - **[Terragrunt](https://terragrunt.gruntwork.io/)** <img src="/images/tools/terragrunt.png" width="18" align="top" /> — thin wrapper around Terraform that keeps configurations DRY across environments.
 - **[Tmux](https://github.com/tmux/tmux)** <img src="/images/tools/tmux.png" width="18" align="top" /> — terminal multiplexer: splits the terminal into panes and keeps sessions alive; powers the `claudio` command and the Claude Code agent-team split-pane workflow.
@@ -47,6 +48,19 @@ Installed as Homebrew **casks**.
 - **[iTerm2](https://iterm2.com/)** <img src="/images/tools/iterm2.png" width="18" align="top" /> — feature-rich terminal emulator for macOS.
 - **[Postman](https://www.postman.com/)** <img src="/images/tools/postman.png" width="18" align="top" /> — API client for building and testing HTTP requests.
 - **[Visual Studio Code](https://code.visualstudio.com/)** <img src="/images/tools/vscode.png" width="18" align="top" /> — extensible code editor.
+
+## 📱 Mobile development
+
+The toolchain for building and testing React Native / Expo apps on iOS and
+Android. A mix of Homebrew **formulae** (Bitrise CLI, CocoaPods, Maestro,
+Watchman) and **casks** (Android Studio, Zulu JDK 17).
+
+- **[Android Studio](https://developer.android.com/studio)** 🤖 — Android IDE, SDK manager and emulators.
+- **[Bitrise CLI](https://github.com/bitrise-io/bitrise)** 🔄 — runs Bitrise CI workflows locally (`bitrise`).
+- **[CocoaPods](https://cocoapods.org/)** 📦 — dependency manager for iOS (Cocoa) projects (`pod`).
+- **[Maestro](https://maestro.dev/)** 🎭 — mobile UI test automation for iOS simulators and Android emulators. Installed from the official `mobile-dev-inc/tap` tap.
+- **[Watchman](https://facebook.github.io/watchman/)** 👀 — file watcher used by React Native and the Metro bundler.
+- **[Zulu JDK 17](https://www.azul.com/downloads/?package=jdk)** ☕ — Azul's OpenJDK 17 build, the Java version Android builds need (cask `zulu@17`).
 
 ## 🤖 AI — models, assistants & coding agents
 
@@ -73,7 +87,7 @@ A mix of Homebrew **formulae** (apfel, codeburn, ollama, opencode) and **casks**
 ## 🐚 Shell — Oh My Zsh
 
 - **[Oh My Zsh](https://ohmyz.sh/)** <img src="/images/tools/oh-my-zsh.png" width="18" align="top" /> — community framework for managing your zsh configuration (themes, plugins, sensible defaults).
-- **The dotfiles zsh config** (`~/.dotfiles.zsh`) <img src="/images/tools/zsh.png" width="18" align="top" /> — loads Homebrew, initialises **nvm** (with automatic `.nvmrc` switching) and **pyenv**, and opens your `~/Workspace` on every new shell. See [The install scripts](/guide/scripts).
+- **The dotfiles zsh config** (`~/.dotfiles.zsh`) <img src="/images/tools/zsh.png" width="18" align="top" /> — loads Homebrew, initialises **nvm** (with automatic `.nvmrc` switching) and **pyenv**, defines the `ag` alias for ripgrep and the `claudio` command (Claude Code inside a fresh tmux session), and opens your `~/Workspace` (when it exists) on every new shell. A tmux config (`~/.tmux.conf`: mouse on, large scrollback) is installed alongside it. See [The install scripts](/guide/scripts).
 
 ## 🌐 Browsers
 

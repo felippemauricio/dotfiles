@@ -17,8 +17,11 @@ dotfiles/
 ├── Brewfile           # declarative list of Homebrew formulae and casks
 ├── install.sh         # entry point; runs the scripts below in order
 ├── website/           # VitePress docs site, deployed to GitHub Pages
+├── tests/             # Vitest: docs-site config and Brewfile conventions
+├── docs/              # decision docs
+├── .github/workflows/ # ci.yml (npm run check) and pages.yml (docs deploy)
 └── scripts/
-    ├── homebrew.sh    # installs Homebrew, then `brew bundle`
+    ├── homebrew.sh    # installs Homebrew, trusts the Brewfile's taps, then `brew bundle`
     ├── oh-my-zsh.sh   # installs the Xcode CLI tools and Oh My Zsh
     ├── shell.sh       # installs the zsh + tmux configs into the home directory
     ├── zshrc          # the zsh config (nvm + pyenv); copied to ~/.dotfiles.zsh
@@ -64,6 +67,15 @@ dotfiles/
 - **Version managers:** Node is managed with nvm and Python with pyenv. Do not
   introduce asdf or mise.
 - Every script must stay runnable on its own and is `set -euo pipefail`.
+- `scripts/zshrc` is zsh, but `languages.sh` sources it under **bash with
+  `set -euo pipefail`** — keep it bash-safe: guard zsh-only code with
+  `[ -n "${ZSH_VERSION-}" ]` (never a bare `$ZSH_VERSION`, which aborts under
+  `set -u`) and never let a top-level command fail (e.g. a `cd` into a folder a
+  fresh machine does not have yet).
+- **Run `npm run check` before opening a PR** — ESLint, Prettier, ShellCheck
+  (`install.sh` and `scripts/*.sh`), Vitest (including the Brewfile order,
+  comment-alignment and tap checks) and a docs build. CI runs the same command on
+  every push and pull request.
 - The shell config is installed as `~/.dotfiles.zsh` and sourced from `~/.zshrc`.
 - All generated content (docs, comments, commit messages) is written in
   Australian English.

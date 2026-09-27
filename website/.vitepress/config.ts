@@ -49,7 +49,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Released under the MIT License.',
+      message: 'Released under the MIT Licence.',
       copyright:
         '© 2019-present <a href="https://www.linkedin.com/in/felippemauricio/">Felippe Maurício</a>',
     },

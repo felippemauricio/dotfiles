@@ -13,7 +13,7 @@ export NVM_DIR="$HOME/.nvm"
 # Automatically switch to the version in .nvmrc when entering a directory.
 # Guarded for zsh: `scripts/languages.sh` sources this file under bash to load
 # nvm/pyenv, and `autoload`/`add-zsh-hook` are zsh builtins that error there.
-if [ -n "$ZSH_VERSION" ]; then
+if [ -n "${ZSH_VERSION-}" ]; then
   autoload -U add-zsh-hook
   load-nvmrc() {
     if [[ -f .nvmrc && -r .nvmrc ]]; then
@@ -42,9 +42,12 @@ fi
 
 # ===================================================================================
 
-# Open the workspace folder on a new shell
+# Open the workspace folder on a new shell (skipped when it does not exist yet,
+# e.g. on a fresh machine, so sourcing this file never fails)
 
-cd ~/Workspace
+if [ -d "$HOME/Workspace" ]; then
+  cd "$HOME/Workspace"
+fi
 
 # ===================================================================================
 

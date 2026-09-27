@@ -2,6 +2,7 @@
 set -euo pipefail
 
 # Load the shell configuration so nvm and pyenv are available
+# shellcheck source=/dev/null
 source "$HOME/.dotfiles.zsh"
 
 # Node — install the latest LTS via nvm and set it as the default
