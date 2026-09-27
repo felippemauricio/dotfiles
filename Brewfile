@@ -35,7 +35,6 @@ cask "claude"                  # Anthropic's Claude desktop app
 cask "claude-code"             # Anthropic's agentic coding tool for the terminal
 cask "clipy"                   # clipboard-history manager
 cask "codex"                   # OpenAI's command-line coding agent
-cask "codex-app"               # OpenAI's Codex desktop app
 cask "cursor"                  # AI-first code editor (a Visual Studio Code fork)
 cask "dbeaver-community"       # DBeaver Community Edition — universal database client
 cask "discord"                 # voice, video and text chat for communities

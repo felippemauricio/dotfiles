@@ -28,5 +28,5 @@ features:
   - title: Just shell scripts
     details: No framework, no magic. Each step is a small script you can read and run on its own.
   - title: Yours to fork
-    details: A starting point, not a straightjacket. Clone it, trim the Brewfile and make it your own.
+    details: A starting point, not a straitjacket. Clone it, trim the Brewfile and make it your own.
 ---

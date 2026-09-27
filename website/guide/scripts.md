@@ -6,7 +6,9 @@ Each one is small, `set -euo pipefail`, and safe to run on its own.
 ## `scripts/homebrew.sh`
 
 Installs Homebrew with the official install script if it is not already present,
-makes `brew` available on the current shell, then runs `brew bundle` against the
+makes `brew` available on the current shell, taps and trusts every third-party
+`tap` the Brewfile declares (newer Homebrew refuses untrusted taps, which would
+stall an unattended run), then runs `brew bundle` against the
 [`Brewfile`](/reference/brewfile).
 
 ## `scripts/oh-my-zsh.sh`
@@ -20,7 +22,9 @@ Copies `scripts/zshrc` to `~/.dotfiles.zsh` (sourced from `~/.zshrc`, once) and
 `scripts/tmux.conf` to `~/.tmux.conf` (mouse on, plus a large scrollback buffer).
 The zsh config sets up Homebrew, nvm and pyenv, defines the `ag` alias for ripgrep
 (`rg`) and the `claudio` command (launches Claude Code inside a tmux session for
-agent-team split panes), and opens your `~/Workspace` folder on a new shell.
+agent-team split panes), and opens your `~/Workspace` folder (when it exists) on a
+new shell. The config is also sourced by `languages.sh` under bash with
+`set -euo pipefail`, so it must stay bash-safe.
 
 ## `scripts/languages.sh`
 

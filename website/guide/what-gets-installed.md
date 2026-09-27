@@ -5,7 +5,7 @@ package manager, a set of **command-line tools**, the **Oh My Zsh** shell
 framework and config, a curated set of **desktop applications**, and the **Node**
 and **Python** toolchains.
 
-Everything except Homebrew and Oh My Zsh (which the install scripts bootstrap
+Every package except Homebrew and Oh My Zsh (which the install scripts bootstrap
 first) is declared in the [`Brewfile`](/reference/brewfile) and applied with
 `brew bundle`. To add or remove a package, edit that file and re-run
 `brew bundle`.
@@ -64,7 +64,6 @@ A mix of Homebrew **formulae** (apfel, codeburn, ollama, opencode) and **casks**
 - **Desktop apps**
   - **[ChatGPT](https://chatgpt.com/)** <img src="/images/tools/openai.png" width="18" align="top" /> — OpenAI's ChatGPT desktop app.
   - **[Claude](https://claude.ai/)** <img src="/images/tools/claude-ai.png" width="18" align="top" /> — Anthropic's Claude desktop app.
-  - **[Codex app](https://openai.com/codex)** <img src="/images/tools/codex.png" width="18" align="top" /> — OpenAI's Codex desktop app.
   - **[Opencode desktop](https://opencode.ai/)** <img src="/images/tools/opencode.png" width="18" align="top" /> — the opencode desktop client.
 
 - **Usage & analytics**
@@ -73,7 +72,7 @@ A mix of Homebrew **formulae** (apfel, codeburn, ollama, opencode) and **casks**
 ## 🐚 Shell — Oh My Zsh
 
 - **[Oh My Zsh](https://ohmyz.sh/)** <img src="/images/tools/oh-my-zsh.png" width="18" align="top" /> — community framework for managing your zsh configuration (themes, plugins, sensible defaults).
-- **The dotfiles zsh config** (`~/.dotfiles.zsh`) <img src="/images/tools/zsh.png" width="18" align="top" /> — loads Homebrew, initialises **nvm** (with automatic `.nvmrc` switching) and **pyenv**, and opens your `~/Workspace` on every new shell. See [The install scripts](/guide/scripts).
+- **The dotfiles zsh config** (`~/.dotfiles.zsh`) <img src="/images/tools/zsh.png" width="18" align="top" /> — loads Homebrew, initialises **nvm** (with automatic `.nvmrc` switching) and **pyenv**, defines the `ag` alias for ripgrep and the `claudio` command (Claude Code inside a fresh tmux session), and opens your `~/Workspace` (when it exists) on every new shell. A tmux config (`~/.tmux.conf`: mouse on, large scrollback) is installed alongside it. See [The install scripts](/guide/scripts).
 
 ## 🌐 Browsers
 

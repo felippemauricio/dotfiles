@@ -33,14 +33,14 @@ and is also runnable on its own.
 
 | Step | Script                 | What it does                                                                                                |
 | ---- | ---------------------- | ----------------------------------------------------------------------------------------------------------- |
-| 1    | `scripts/homebrew.sh`  | Installs Homebrew (if missing), then installs everything in the `Brewfile`.                                 |
+| 1    | `scripts/homebrew.sh`  | Installs Homebrew (if missing), trusts the `Brewfile`'s taps, then installs everything in the `Brewfile`.   |
 | 2    | `scripts/oh-my-zsh.sh` | Triggers the Xcode command-line tools install and installs Oh My Zsh.                                       |
 | 3    | `scripts/shell.sh`     | Copies the zsh config to `~/.dotfiles.zsh` (sourced from `~/.zshrc`) and the tmux config to `~/.tmux.conf`. |
 | 4    | `scripts/languages.sh` | Installs Node (latest LTS via nvm) and Python (latest stable via pyenv).                                    |
 
 ## What gets installed
 
-Everything except Homebrew and Oh My Zsh is declared in the [`Brewfile`](Brewfile)
+Every package except Homebrew and Oh My Zsh is declared in the [`Brewfile`](Brewfile)
 and applied with `brew bundle` — formulae (`brew`) are command-line tools, casks
 (`cask`) are GUI applications. To add or remove a package, edit that file and
 re-run `brew bundle`.
@@ -93,7 +93,6 @@ re-run `brew bundle`.
 - **Desktop apps**
   - <img src="website/public/images/tools/openai.png" width="18" align="top" /> **[ChatGPT](https://chatgpt.com/)** — OpenAI's ChatGPT desktop app.
   - <img src="website/public/images/tools/claude-ai.png" width="18" align="top" /> **[Claude](https://claude.ai/)** — Anthropic's Claude desktop app.
-  - <img src="website/public/images/tools/codex.png" width="18" align="top" /> **[Codex app](https://openai.com/codex)** — OpenAI's Codex desktop app.
   - <img src="website/public/images/tools/opencode.png" width="18" align="top" /> **[Opencode desktop](https://opencode.ai/)** — the opencode desktop client.
 
 - **Usage & analytics**
@@ -144,7 +143,7 @@ scrollback so you can scroll far up to re-read output). On every new shell it:
 - defines the `claudio` command, which launches Claude Code inside a fresh
   **tmux** session each time (so agent-team teammates open in side-by-side panes,
   and several sessions in the same folder stay isolated); and
-- opens your `~/Workspace` directory.
+- opens your `~/Workspace` directory (when it exists).
 
 ## Version managers
 
@@ -163,6 +162,18 @@ published to GitHub Pages on every push to `master`:
 - **Guide** — getting started, installation, the scripts, the version managers,
   and what gets installed.
 - **Reference** — the annotated `Brewfile`.
+
+## Development
+
+The docs site and the repository checks run on Node (see `package.json`):
+
+```sh
+npm ci
+npm run check   # ESLint, Prettier, ShellCheck, Vitest and a docs build
+```
+
+CI (`.github/workflows/ci.yml`) runs `npm run check` on every push and pull
+request; the Pages workflow deploys the site on every push to `master`.
 
 ## Licence
 

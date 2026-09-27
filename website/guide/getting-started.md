@@ -14,7 +14,7 @@ a small zsh configuration, and the Node and Python toolchains.
 - **Apple Silicon first.** Paths target `/opt/homebrew`, the Homebrew prefix on
   Apple Silicon Macs.
 - **No framework.** Each step is a short, readable shell script. There is nothing
-  to learn beyond `sh`.
+  to learn beyond `bash`.
 
 ## What you end up with
 
