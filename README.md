@@ -58,6 +58,7 @@ re-run `brew bundle`.
 - <img src="website/public/images/tools/jq.png" width="18" align="top" /> **[Jq](https://jqlang.org/)** — command-line JSON processor for slicing, filtering and transforming JSON.
 - <img src="website/public/images/tools/mitmproxy.png" width="18" align="top" /> **[Mitmproxy](https://mitmproxy.org/)** — interactive HTTPS proxy for inspecting and debugging HTTP(S) traffic (`mitmproxy`, `mitmweb` and `mitmdump`). Command-line tool, but installed as a Homebrew cask (its only distribution).
 - 🔍 **[Ripgrep](https://github.com/BurntSushi/ripgrep)** — extremely fast recursive search (`rg`) that respects `.gitignore`.
+- 🐚 **[ShellCheck](https://www.shellcheck.net/)** — static analysis for shell scripts; `npm run check` uses it to lint `install.sh` and `scripts/*.sh`.
 - <img src="website/public/images/tools/terraform.png" width="18" align="top" /> **[Terraform](https://developer.hashicorp.com/terraform)** — infrastructure as code; provisions and manages cloud resources declaratively. Installed from the official `hashicorp/tap`.
 - <img src="website/public/images/tools/terragrunt.png" width="18" align="top" /> **[Terragrunt](https://terragrunt.gruntwork.io/)** — thin wrapper around Terraform that keeps configurations DRY across environments.
 - <img src="website/public/images/tools/tmux.png" width="18" align="top" /> **[Tmux](https://github.com/tmux/tmux)** — terminal multiplexer: splits the terminal into panes and keeps sessions alive; powers the `claudio` command and the Claude Code agent-team split-pane workflow.
@@ -79,6 +80,17 @@ re-run `brew bundle`.
 - <img src="website/public/images/tools/postman.png" width="18" align="top" /> **[Postman](https://www.postman.com/)** — API client for building and testing HTTP requests.
 - <img src="website/public/images/tools/vscode.png" width="18" align="top" /> **[Visual Studio Code](https://code.visualstudio.com/)** — extensible code editor.
 
+### 📱 Mobile development
+
+The toolchain for building and testing React Native / Expo apps on iOS and Android.
+
+- 🤖 **[Android Studio](https://developer.android.com/studio)** — Android IDE, SDK manager and emulators (cask).
+- 🔄 **[Bitrise CLI](https://github.com/bitrise-io/bitrise)** — runs Bitrise CI workflows locally (`bitrise`).
+- 📦 **[CocoaPods](https://cocoapods.org/)** — dependency manager for iOS (Cocoa) projects (`pod`).
+- 🎭 **[Maestro](https://maestro.dev/)** — mobile UI test automation for iOS simulators and Android emulators. Installed from the official `mobile-dev-inc/tap` tap.
+- 👀 **[Watchman](https://facebook.github.io/watchman/)** — file watcher used by React Native and the Metro bundler.
+- ☕ **[Zulu JDK 17](https://www.azul.com/downloads/?package=jdk)** — Azul's OpenJDK 17 build, the Java version Android builds need (cask `zulu@17`).
+
 ### 🤖 AI — models, assistants & coding agents
 
 - **Local model runtimes**
@@ -93,6 +105,7 @@ re-run `brew bundle`.
 - **Desktop apps**
   - <img src="website/public/images/tools/openai.png" width="18" align="top" /> **[ChatGPT](https://chatgpt.com/)** — OpenAI's ChatGPT desktop app.
   - <img src="website/public/images/tools/claude-ai.png" width="18" align="top" /> **[Claude](https://claude.ai/)** — Anthropic's Claude desktop app.
+  - <img src="website/public/images/tools/codex.png" width="18" align="top" /> **[Codex app](https://openai.com/codex)** — OpenAI's Codex desktop app.
   - <img src="website/public/images/tools/opencode.png" width="18" align="top" /> **[Opencode desktop](https://opencode.ai/)** — the opencode desktop client.
 
 - **Usage & analytics**
